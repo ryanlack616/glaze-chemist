@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glaze Chemist - Glaze Chemist</title>
+<style>
+:root {
+  --bg: #07070c; --bg-card: #0f0f18; --bg-hover: #17172a;
+  --border: #1e1e3a; --text: #c8c8d8; --text-dim: #6b6b8a; --text-bright: #e8e8f0;
+  --accent: #818cf8; --accent-dim: #4f46e5;
+  --rose: #fb7185; --teal: #2dd4bf; --amber: #fbbf24; --emerald: #34d399;
+  --mono: 'SF Mono','Cascadia Code','JetBrains Mono','Fira Code',monospace;
+  --sans: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { background: var(--bg); color: var(--text); font-family: var(--sans); }
+body { min-height: 100vh; display: flex; flex-direction: column; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.banner {
+  background: linear-gradient(135deg, #1a3a2a, #0d2818);
+  color: var(--text-bright); font-family: var(--mono); font-size: 0.72rem;
+  padding: 0.35rem 1rem; text-align: center; border-bottom: 1px solid var(--emerald);
+}
+.banner a { color: var(--amber); }
+
+.site-header {
+  display: flex; align-items: center; gap: 1rem; padding: 1rem 2rem;
+  border-bottom: 1px solid var(--border); flex-wrap: wrap;
+}
+.site-header .logo { font-family: var(--mono); font-size: 1.1rem; color: var(--text-bright); }
+.site-header .logo .sigil { color: var(--emerald); }
+.site-header nav { display: flex; gap: 0.6rem; margin-left: auto; flex-wrap: wrap; }
+.site-header nav a {
+  font-family: var(--mono); font-size: 0.75rem; color: var(--text-dim);
+  padding: 0.3rem 0.6rem; border: 1px solid var(--border); border-radius: 6px;
+  transition: all 0.15s;
+}
+.site-header nav a:hover { color: var(--text-bright); border-color: var(--emerald); text-decoration: none; }
+.site-header nav a.active { background: rgba(52,211,153,0.15); color: var(--emerald); border-color: var(--emerald); }
+
+.search-wrap { padding: 1rem 2rem; }
+.search-input {
+  width: 100%; max-width: 500px; background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 8px; padding: 0.6rem 1rem; color: var(--text-bright);
+  font-family: var(--mono); font-size: 0.85rem; outline: none;
+}
+.search-input:focus { border-color: var(--emerald); }
+.search-input::placeholder { color: var(--text-dim); }
+
+.content { flex: 1; padding: 1rem 2rem 3rem; max-width: 1200px; width: 100%; margin: 0 auto; }
+
+.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; }
+.card {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px;
+  padding: 1rem 1.2rem; transition: border-color 0.15s;
+}
+.card:hover { border-color: var(--emerald); }
+.card a { text-decoration: none; }
+.card .card-name { font-family: var(--mono); font-size: 0.9rem; color: var(--text-bright); margin-bottom: 0.3rem; }
+.card .card-type {
+  font-family: var(--mono); font-size: 0.62rem; padding: 0.12rem 0.4rem;
+  border-radius: 4px; display: inline-block; margin-bottom: 0.4rem;
+}
+.card .card-notes { font-size: 0.78rem; color: var(--text-dim); line-height: 1.5; }
+.card .card-meta { font-family: var(--mono); font-size: 0.65rem; color: var(--text-dim); margin-top: 0.4rem; }
+.card .card-tags { margin-top: 0.5rem; }
+
+.type-person { background: rgba(129,140,248,0.2); color: var(--accent); }
+.type-book { background: rgba(251,191,36,0.2); color: var(--amber); }
+.type-concept { background: rgba(45,212,191,0.2); color: var(--teal); }
+.type-institution { background: rgba(52,211,153,0.2); color: var(--emerald); }
+
+.tag {
+  display: inline-block; font-family: var(--mono); font-size: 0.58rem;
+  padding: 0.1rem 0.35rem; border-radius: 3px; margin-right: 0.3rem; margin-bottom: 0.2rem;
+  background: rgba(200,200,216,0.06); color: var(--text-dim); border: 1px solid var(--border);
+}
+.tag.beloved { background: rgba(251,191,36,0.1); color: var(--amber); border-color: rgba(251,191,36,0.2); }
+.tag.cult { background: rgba(251,113,133,0.1); color: var(--rose); border-color: rgba(251,113,133,0.2); }
+.tag.foundational { background: rgba(129,140,248,0.1); color: var(--accent); border-color: rgba(129,140,248,0.2); }
+
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+.stat-card {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px;
+  padding: 1rem; text-align: center;
+}
+.stat-card .stat-num { font-family: var(--mono); font-size: 2rem; color: var(--text-bright); }
+.stat-card .stat-label { font-family: var(--mono); font-size: 0.7rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+
+.detail-header { margin-bottom: 2rem; }
+.detail-header h1 { font-family: var(--mono); font-size: 1.8rem; color: var(--text-bright); margin-bottom: 0.5rem; }
+.detail-header .meta { font-family: var(--mono); font-size: 0.75rem; color: var(--text-dim); display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+
+.detail-body { display: grid; grid-template-columns: 1fr 340px; gap: 2rem; }
+@media (max-width: 768px) { .detail-body { grid-template-columns: 1fr; } }
+
+.section { margin-bottom: 1.5rem; }
+.section-title {
+  font-family: var(--mono); font-size: 0.72rem; color: var(--text-dim);
+  text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem;
+  padding-bottom: 0.3rem; border-bottom: 1px solid var(--border);
+}
+.notes-text { font-size: 0.88rem; color: var(--text); line-height: 1.7; }
+
+.conn-item {
+  display: flex; align-items: center; gap: 0.5rem; padding: 0.3rem 0;
+  font-family: var(--mono); font-size: 0.78rem; border-bottom: 1px solid var(--border);
+}
+.conn-item:last-child { border-bottom: none; }
+.conn-item a { color: var(--text-bright); }
+.conn-item .conn-label { color: var(--text-dim); font-size: 0.65rem; }
+
+.dir-count { font-family: var(--mono); font-size: 0.75rem; color: var(--text-dim); margin-bottom: 1rem; }
+
+.site-footer {
+  padding: 1.5rem 2rem; border-top: 1px solid var(--border);
+  font-family: var(--mono); font-size: 0.68rem; color: var(--text-dim);
+  text-align: center;
+}
+
+.card.hidden { display: none; }
+
+.inst-label {
+  font-family: var(--mono); font-size: 0.6rem; color: var(--emerald);
+  opacity: 0.7; margin-top: 0.15rem;
+}
+</style>
+<script async src="https://plausible.io/js/pa-ICo80msYrRO0pVG-nP-eG.js"></script>
+<script>window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()</script>
+</head>
+<body>
+<div class="banner">Glaze Chemist - A free reference from <a href="https://stullatlas.app">Stull Atlas</a></div>
+<div class="site-header">
+  <a href="/glaze-chemist/index.html" class="logo"><span class="sigil">&#9671;</span> Glaze Chemist</a>
+  <nav><a href="/glaze-chemist/index.html" class="active">Home</a>
+<a href="/glaze-chemist/people/index.html">People</a>
+<a href="/glaze-chemist/books/index.html">Books</a>
+<a href="/glaze-chemist/concepts/index.html">Concepts</a>
+<a href="/glaze-chemist/lineage.html">Lineage</a></nav>
+</div>
+
+<div class="content">
+  <div style="text-align:center;margin:2rem 0 1rem">
+    <h1 style="font-family:var(--mono);font-size:2rem;color:var(--text-bright)">
+      <span style="color:var(--emerald)">&#9671;</span> Glaze Chemist
+    </h1>
+    <p style="color:var(--text-dim);font-size:0.9rem;margin-top:0.5rem">
+      A free reference directory for glaze chemistry &mdash; the people, books, and ideas that shaped the field
+    </p>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card"><div class="stat-num">112</div><div class="stat-label">Total Entries</div></div>
+    <div class="stat-card"><div class="stat-num">60</div><div class="stat-label">People</div></div>
+    <div class="stat-card"><div class="stat-num">45</div><div class="stat-label">Books</div></div>
+    <div class="stat-card"><div class="stat-num">25</div><div class="stat-label">Connections</div></div>
+  </div>
+
+  <div class="search-wrap" style="padding:0 0 1.5rem">
+    <input type="text" class="search-input" id="globalSearch" placeholder="Search all 112 entries..." style="max-width:100%">
+  </div>
+  <div id="searchResults" style="display:none;margin-bottom:2rem"></div>
+
+  <div class="section">
+    <div class="section-title">Foundational Figures</div>
+    <div class="card-grid"><div class="card">
+  <a href="people/seger_hermann.html">
+    <div class="card-name">Hermann August Seger</div>
+    <span class="card-type type-person">chemist, researcher</span>
+    <div class="card-meta">German &middot; 19th Century</div>
+    <div class="inst-label">Royal Porcelain Factory, Berlin (KPM)</div>
+    <div class="card-notes">Established the foundational UMF system that underpins rational glaze calculation; contribution considered irreplaceable and enduring for 15</div>
+    <div class="card-tags"><span class="tag">historical</span><span class="tag foundational">foundational</span><span class="tag">UMF</span></div>
+  </a>
+</div><div class="card">
+  <a href="people/rhodes_daniel.html">
+    <div class="card-name">Daniel Rhodes</div>
+    <span class="card-type type-person">author, educator</span>
+    <div class="card-meta">American &middot; 20th Century</div>
+    <div class="inst-label">Alfred University</div>
+    <div class="card-notes">Standard text for generations; described as having a voice — unhurried, curious, authoritative. Multiple generations learned to think about </div>
+    <div class="card-tags"><span class="tag">studio</span><span class="tag foundational">foundational</span><span class="tag beloved">beloved</span></div>
+  </a>
+</div><div class="card">
+  <a href="people/leach_bernard.html">
+    <div class="card-name">Bernard Leach</div>
+    <span class="card-type type-person">studio potter, author, educator</span>
+    <div class="card-meta">British &middot; 20th Century</div>
+    <div class="inst-label">Leach Pottery, St Ives</div>
+    <div class="card-notes">Usually discussed aesthetically but contains serious chemistry; proto-terroir glaze work before the concept existed. Book treasured in a dev</div>
+    <div class="card-tags"><span class="tag">studio</span><span class="tag">historical</span><span class="tag beloved">beloved</span><span class="tag">ash glazes</span></div>
+  </a>
+</div><div class="card">
+  <a href="people/hamer_frank.html">
+    <div class="card-name">Frank Hamer</div>
+    <span class="card-type type-person">author</span>
+    <div class="card-meta">British &middot; 20th Century</div>
+    
+    <div class="card-notes">Often underappreciated relative to actual influence. Encyclopedic reference, treasured like a trusted tool.</div>
+    <div class="card-tags"><span class="tag">reference</span><span class="tag foundational">foundational</span><span class="tag beloved">beloved</span></div>
+  </a>
+</div><div class="card">
+  <a href="people/hamer_janet.html">
+    <div class="card-name">Janet Hamer</div>
+    <span class="card-type type-person">author</span>
+    <div class="card-meta">British &middot; 20th Century</div>
+    
+    <div class="card-notes">Co-authored The Potter&#x27;s Dictionary with Frank Hamer; the collaboration produced one of the most enduring reference works in ceramics.</div>
+    <div class="card-tags"><span class="tag">reference</span><span class="tag foundational">foundational</span></div>
+  </a>
+</div><div class="card">
+  <a href="people/britt_john.html">
+    <div class="card-name">John Britt</div>
+    <span class="card-type type-person">author, educator</span>
+    <div class="card-meta">American &middot; Contemporary</div>
+    
+    <div class="card-notes">Most-used studio references of last two decades. Studio copies often have glaze drips on pages.</div>
+    <div class="card-tags"><span class="tag">studio</span><span class="tag">contemporary</span><span class="tag">popular</span><span class="tag beloved">beloved</span></div>
+  </a>
+</div><div class="card">
+  <a href="people/cushing_val.html">
+    <div class="card-name">Val Cushing</div>
+    <span class="card-type type-person">educator, author</span>
+    <div class="card-meta">American &middot; 20th Century</div>
+    <div class="inst-label">Alfred University</div>
+    <div class="card-notes">Handbook circulated through Alfred&#x27;s orbit, not commercially published. Treasured almost as artifact; having a copy feels like connecti</div>
+    <div class="card-tags"><span class="tag">studio</span><span class="tag beloved">beloved</span><span class="tag">Alfred University</span><span class="tag cult">cult</span></div>
+  </a>
+</div><div class="card">
+  <a href="people/grotell_maija.html">
+    <div class="card-name">Maija Grotell</div>
+    <span class="card-type type-person">educator, studio potter</span>
+    <div class="card-meta">Finnish-American &middot; 20th Century</div>
+    <div class="inst-label">Cranbrook Academy of Art</div>
+    <div class="card-notes">Known as the &#x27;Mother of American Ceramics&#x27;; revolutionary educator focused on glaze chemistry.</div>
+    <div class="card-tags"><span class="tag">historical</span><span class="tag">educator</span><span class="tag foundational">foundational</span></div>
+  </a>
+</div></div>
+  </div>
+
+  <div class="section" style="margin-top:2rem">
+    <div class="section-title">Essential & Treasured Books</div>
+    <div class="card-grid"><div class="card">
+  <a href="books/clay_glazes_rhodes.html">
+    <div class="card-name">Clay and Glazes for the Potter</div>
+    <span class="card-type type-book">book</span>
+    <div class="card-meta">Daniel Rhodes (1957)</div>
+    <div class="card-notes">Standard text for generations. Described as having a voice — unhurried, curious, authoritative. Treasured the way musicians treasure a parti</div>
+    <div class="card-tags"><span class="tag foundational">foundational</span><span class="tag beloved">beloved</span><span class="tag">studio</span></div>
+  </a>
+</div><div class="card">
+  <a href="books/potters_book_leach.html">
+    <div class="card-name">A Potter&#x27;s Book</div>
+    <span class="card-type type-book">book</span>
+    <div class="card-meta">Bernard Leach</div>
+    <div class="card-notes">Contains glaze chemistry embedded in a philosophy of making. Treasured in a devotional way beyond technical utility. Proto-terroir glaze wor</div>
+    <div class="card-tags"><span class="tag foundational">foundational</span><span class="tag beloved">beloved</span><span class="tag">devotional</span><span class="tag">ash glazes</span></div>
+  </a>
+</div><div class="card">
+  <a href="books/potters_dictionary_hamer.html">
+    <div class="card-name">The Potter&#x27;s Dictionary of Materials and Techniques</div>
+    <span class="card-type type-book">book</span>
+    <div class="card-meta">Frank Hamer, Janet Hamer</div>
+    <div class="card-notes">Arguably the single most comprehensive reference in the field. Treasured like a trusted tool — worn spines, penciled annotations, tabs.</div>
+    <div class="card-tags"><span class="tag">reference</span><span class="tag foundational">foundational</span><span class="tag beloved">beloved</span><span class="tag">encyclopedic</span></div>
+  </a>
+</div><div class="card">
+  <a href="books/high_fire_glazes_britt.html">
+    <div class="card-name">The Complete Guide to High-Fire Glazes</div>
+    <span class="card-type type-book">book</span>
+    <div class="card-meta">John Britt</div>
+    <div class="card-notes">Most-used studio reference of last two decades. Recipe-heavy but with solid chemistry explanations.</div>
+    <div class="card-tags"><span class="tag">studio</span><span class="tag">recipes</span><span class="tag">popular</span><span class="tag beloved">beloved</span></div>
+  </a>
+</div><div class="card">
+  <a href="books/ceramic_spectrum_hopper.html">
+    <div class="card-name">The Ceramic Spectrum</div>
+    <span class="card-type type-book">book</span>
+    <div class="card-meta">Robin Hopper</div>
+    <div class="card-notes">Organized around the periodic table of colorants. People describe it as the book that made color chemistry finally make sense.</div>
+    <div class="card-tags"><span class="tag">colorants</span><span class="tag beloved">beloved</span><span class="tag">systematic</span></div>
+  </a>
+</div><div class="card">
+  <a href="books/stoneware_glazes_currie.html">
+    <div class="card-name">Stoneware Glazes: A Systematic Approach</div>
+    <span class="card-type type-book">book</span>
+    <div class="card-meta">Ian Currie</div>
+    <div class="card-notes">Described as transformative — changes how you think rather than just what you know. Before-and-after book for many potters.</div>
+    <div class="card-tags"><span class="tag">systematic</span><span class="tag beloved">beloved</span><span class="tag">testing</span><span class="tag cult">cult</span></div>
+  </a>
+</div><div class="card">
+  <a href="books/mastering_cone6_hansen.html">
+    <div class="card-name">Mastering Cone 6 Glazes</div>
+    <span class="card-type type-book">book</span>
+    <div class="card-meta">Tony Hansen, John Hesselberth</div>
+    <div class="card-notes">Validated middle-temperature functional ware as worthy of rigorous chemistry attention. Treasured by functional ware potters.</div>
+    <div class="card-tags"><span class="tag">cone 6</span><span class="tag">functional</span><span class="tag beloved">beloved</span></div>
+  </a>
+</div><div class="card">
+  <a href="books/ceramic_glazes_parmelee.html">
+    <div class="card-name">Ceramic Glazes</div>
+    <span class="card-type type-book">book</span>
+    <div class="card-meta">C.W. Parmelee</div>
+    <div class="card-notes">Dense industrial science heavyweight. Out of print and sought after. Most technically complete treatment of glaze physics and chemistry from</div>
+    <div class="card-tags"><span class="tag">technical</span><span class="tag">industrial</span><span class="tag cult">cult</span><span class="tag">out of print</span><span class="tag foundational">foundational</span></div>
+  </a>
+</div></div>
+  </div>
+
+  <div class="section" style="margin-top:2rem;text-align:center">
+    <a href="/glaze-chemist/lineage.html" style="font-family:var(--mono);font-size:0.85rem;color:var(--emerald);border:1px solid var(--emerald);padding:0.5rem 1.5rem;border-radius:8px;display:inline-block;transition:all 0.15s">
+      View Lineage Network &rarr;
+    </a>
+  </div>
+</div>
+
+<script>
+const ALL = [{"name": "Hermann August Seger", "type": "person", "href": "people/seger_hermann.html", "notes": "Established the foundational UMF system that underpins rational glaze calculation; contribution cons"}, {"name": "Daniel Rhodes", "type": "person", "href": "people/rhodes_daniel.html", "notes": "Standard text for generations; described as having a voice \u2014 unhurried, curious, authoritative. Mult"}, {"name": "Bernard Leach", "type": "person", "href": "people/leach_bernard.html", "notes": "Usually discussed aesthetically but contains serious chemistry; proto-terroir glaze work before the "}, {"name": "Frank Hamer", "type": "person", "href": "people/hamer_frank.html", "notes": "Often underappreciated relative to actual influence. Encyclopedic reference, treasured like a truste"}, {"name": "Janet Hamer", "type": "person", "href": "people/hamer_janet.html", "notes": "Co-authored The Potter's Dictionary with Frank Hamer; the collaboration produced one of the most end"}, {"name": "John Britt", "type": "person", "href": "people/britt_john.html", "notes": "Most-used studio references of last two decades. Studio copies often have glaze drips on pages."}, {"name": "Linda Bloomfield", "type": "person", "href": "people/bloomfield_linda.html", "notes": "Particularly strong on colorant chemistry; clean modern treatment bridging scientific explanation an"}, {"name": "Val Cushing", "type": "person", "href": "people/cushing_val.html", "notes": "Handbook circulated through Alfred's orbit, not commercially published. Treasured almost as artifact"}, {"name": "Maija Grotell", "type": "person", "href": "people/grotell_maija.html", "notes": "Known as the 'Mother of American Ceramics'; revolutionary educator focused on glaze chemistry."}, {"name": "Michael Cardew", "type": "person", "href": "people/cardew_michael.html", "notes": "Known as a 'glaze wizard' in studio pottery."}, {"name": "Robin Hopper", "type": "person", "href": "people/hopper_robin.html", "notes": "One of the most systematic treatments of color in glazes, organized around the periodic table of col"}, {"name": "Tony Hansen", "type": "person", "href": "people/hansen_tony.html", "notes": "Arguably done more than anyone in the modern era to make glaze chemistry computationally accessible."}, {"name": "John Hesselberth", "type": "person", "href": "people/hesselberth_john.html", "notes": "Co-authored the cone 6 reference that validated middle-temperature functional ware as worthy of rigo"}, {"name": "Ian Currie", "type": "person", "href": "people/currie_ian.html", "notes": "Developed a genuinely elegant contribution to empirical glaze research. Described as the book that c"}, {"name": "Robert Tichane", "type": "person", "href": "people/tichane_robert.html", "notes": "Self-published, small print runs, out of print. Treasured partly because hard to find. Obsessive wri"}, {"name": "Matt Katz", "type": "person", "href": "people/katz_matt.html", "notes": "Central to bringing analytical chemistry methods into studio ceramics education."}, {"name": "Richard Zakin", "type": "person", "href": "people/zakin_richard.html", "notes": "Addressed oxidation firing chemistry seriously at a time when most literature assumed reduction."}, {"name": "Herbert Sanders", "type": "person", "href": "people/sanders_herbert.html", "notes": "Bridged Eastern glaze traditions with Western scientific analysis at a time when that crossover was "}, {"name": "Nigel Wood", "type": "person", "href": "people/wood_nigel.html", "notes": "Most rigorous scientific treatment of classical Chinese ceramic chemistry in English. Treasured by a"}, {"name": "W.G. Lawrence", "type": "person", "href": "people/lawrence_wg.html", "notes": "Brought industrial ceramic engineering methodology into studio practice. More technically precise th"}, {"name": "F.H. Norton", "type": "person", "href": "people/norton_fh.html", "notes": "Rigorous engineering texts that influenced generations of ceramic scientists and indirectly shaped s"}, {"name": "C.W. Parmelee", "type": "person", "href": "people/parmelee_cw.html", "notes": "Long considered the most comprehensive technical reference on glaze science from an industrial stand"}, {"name": "Edward Orton Jr.", "type": "person", "href": "people/orton_edward_jr.html", "notes": "Cone system so embedded in practice that people forget it was a significant scientific contribution."}, {"name": "Emmanuel Cooper", "type": "person", "href": "people/cooper_emmanuel.html", "notes": "Bridged chemistry, history, and practice across multiple books. Long-running editor of Ceramic Revie"}, {"name": "Paul Soldner", "type": "person", "href": "people/soldner_paul.html", "notes": "Transformed Western raku practice and forced rethinking of low-fire reduction chemistry. Post-firing"}, {"name": "Warren MacKenzie", "type": "person", "href": "people/mackenzie_warren.html", "notes": "Contributed substantially to understanding wood and reduction glaze behavior through decades of syst"}, {"name": "Jack Troy", "type": "person", "href": "people/troy_jack.html", "notes": "Documented wood-fire and salt-fire chemistry with more analytical rigor than most atmospheric firing"}, {"name": "Byron Temple", "type": "person", "href": "people/temple_byron.html", "notes": "Did serious practical research on salt and soda glaze chemistry at high temperatures."}, {"name": "Shoji Hamada", "type": "person", "href": "people/hamada_shoji.html", "notes": "Left almost no written technical documentation by design, but posthumous analytical work on his glaz"}, {"name": "Coll Minogue", "type": "person", "href": "people/minogue_coll.html", "notes": "Co-authored key wood-fire chemistry texts with Robert Sanderson; practical and analytical approach t"}, {"name": "Robert Sanderson", "type": "person", "href": "people/sanderson_robert.html", "notes": "Co-authored wood-fire chemistry texts with Coll Minogue; systematic documentation of ash glaze behav"}, {"name": "John Neely", "type": "person", "href": "people/neely_john.html", "notes": "Brought spectroscopic methods to questions that previously relied on visual assessment."}, {"name": "Jeff Zamek", "type": "person", "href": "people/zamek_jeff.html", "notes": "More recent practical reference covering materials and glaze formulation together."}, {"name": "Tony Birks", "type": "person", "href": "people/birks_tony.html", "notes": "Reached a mass audience and introduced glaze chemistry to potters who might not have sought it out."}, {"name": "Robert Desjardins", "type": "person", "href": "people/desjardins_robert.html", "notes": "Helped build the computational infrastructure underlying Digitalfire."}, {"name": "R.T. Stull", "type": "person", "href": "people/stull_ray.html", "notes": "Published landmark work on plotting glaze compositions on silica-alumina diagrams. His charts remain"}, {"name": "Derek Au (Philipau)", "type": "person", "href": "people/philipau_derek.html", "notes": "Created and maintains Glazy.org, the world's largest open ceramics database with 340K+ entries. Made"}, {"name": "Charles Fergus Binns", "type": "person", "href": "people/binns_charles.html", "notes": "Son of the director of Royal Worcester. Founded the ceramics program at Alfred University in 1900 \u2014 "}, {"name": "Adelaide Alsop Robineau", "type": "person", "href": "people/robineau_adelaide.html", "notes": "Editor of Keramic Studio (precursor to Ceramics Monthly). Crystalline glaze pioneer who achieved res"}, {"name": "Ron Roy", "type": "person", "href": "people/roy_ron.html", "notes": "Co-developer of the cone 6 oxidation movement. His systematic testing made cone 6 viable as a produc"}, {"name": "Taxile Doat", "type": "person", "href": "people/doat_taxile.html", "notes": "Master ceramist at S\u00e8vres who figured out zinc crystal growth before anyone had the phase diagrams t"}, {"name": "W. David Kingery", "type": "person", "href": "people/kingery_david.html", "notes": "THE textbook author for ceramic material science. Introduction to Ceramics (1960, co-authored) defin"}, {"name": "Pete Pinnell", "type": "person", "href": "people/pinnell_pete.html", "notes": "One of the most respected living glaze chemistry educators. His workshops are deeply analytical \u2014 re"}, {"name": "David Green", "type": "person", "href": "people/green_david.html", "notes": "Wrote one of the clearest explanations of glaze chemistry for studio potters ever published. Underst"}, {"name": "James Chappell", "type": "person", "href": "people/chappell_james.html", "notes": "Wrote the single most comprehensive recipe reference book in studio ceramics \u2014 hundreds of recipes w"}, {"name": "Greg Daly", "type": "person", "href": "people/daly_greg.html", "notes": "Leading authority on luster glazes and their chemistry. Covers a domain nobody else in glaze literat"}, {"name": "Gabriel Kline", "type": "person", "href": "people/kline_gabriel.html", "notes": "Wrote the modern bible of crystalline glaze chemistry. Covers zinc silicate crystal nucleation and g"}, {"name": "Phil Rogers", "type": "person", "href": "people/rogers_phil.html", "notes": "Different from Tichane's historical reconstruction approach \u2014 Phil's Ash Glazes is practical wood-as"}, {"name": "Dave Finkelnburg", "type": "person", "href": "people/finkelnburg_dave.html", "notes": "Active educator who writes extensively about glaze fit, thermal expansion, crazing vs. shivering. Ap"}, {"name": "Hein Severijns", "type": "person", "href": "people/severijns_hein.html", "notes": "Created GlazeMaster, one of the earliest glaze calculation software packages alongside Hansen's Insi"}, {"name": "Steve Branfman", "type": "person", "href": "people/branfman_steve.html", "notes": "Wrote the definitive practical guide to raku chemistry \u2014 carbon trapping, metallic lusters, copper r"}, {"name": "Abu'l-Qasim", "type": "person", "href": "people/abu_al_qasim.html", "notes": "Wrote the first known treatise on ceramic technology in 1301, documenting the glaze and tile-making "}, {"name": "P\u00e8re d'Entrecolles (Fran\u00e7ois Xavier d'Entrecolles)", "type": "person", "href": "people/dentrecolles_francois.html", "notes": "Jesuit missionary stationed in Jingdezhen, China's porcelain capital. His two letters (1712, 1722) d"}, {"name": "Josiah Wedgwood", "type": "person", "href": "people/wedgwood_josiah.html", "notes": "Invented systematic experimental method for ceramics a century before anyone else. His Experiment Bo"}, {"name": "Gail Nichols", "type": "person", "href": "people/nichols_gail.html", "notes": "Wrote the definitive book on soda glazing chemistry. Covers the vapor deposition mechanism, how sodi"}, {"name": "Mimi Obstler", "type": "person", "href": "people/obstler_mimi.html", "notes": "Bridges materials science and studio practice in a way that's genuinely accessible. Out of the Earth"}, {"name": "Henrik Norsker", "type": "person", "href": "people/norsker_henrik.html", "notes": "Co-authored Glazes for the Self-Reliant Potter (with James Danisch) \u2014 how to develop glazes from loc"}, {"name": "Clary Illian", "type": "person", "href": "people/illian_clary.html", "notes": "Studied under Warren MacKenzie, who studied under Bernard Leach. Represents the third generation of "}, {"name": "Pieter Mostert", "type": "person", "href": "people/mostert_pieter.html", "notes": "Active researcher doing computational analysis of the Glazy dataset. His glazy-data-analysis GitHub "}, {"name": "Masakazu Kusakabe", "type": "person", "href": "people/kusakabe_masakazu.html", "notes": "Co-authored Japanese Wood-Fired Ceramics (with Marc Lancet) \u2014 scientific treatment of anagama and no"}, {"name": "Clay and Glazes for the Potter", "type": "book", "href": "books/clay_glazes_rhodes.html", "notes": "Standard text for generations. Described as having a voice \u2014 unhurried, curious, authoritative. Trea"}, {"name": "A Potter's Book", "type": "book", "href": "books/potters_book_leach.html", "notes": "Contains glaze chemistry embedded in a philosophy of making. Treasured in a devotional way beyond te"}, {"name": "The Potter's Dictionary of Materials and Techniques", "type": "book", "href": "books/potters_dictionary_hamer.html", "notes": "Arguably the single most comprehensive reference in the field. Treasured like a trusted tool \u2014 worn "}, {"name": "The Complete Guide to High-Fire Glazes", "type": "book", "href": "books/high_fire_glazes_britt.html", "notes": "Most-used studio reference of last two decades. Recipe-heavy but with solid chemistry explanations."}, {"name": "The Complete Guide to Mid-Range Glazes", "type": "book", "href": "books/mid_range_glazes_britt.html", "notes": ""}, {"name": "The Ceramic Spectrum", "type": "book", "href": "books/ceramic_spectrum_hopper.html", "notes": "Organized around the periodic table of colorants. People describe it as the book that made color che"}, {"name": "Stoneware Glazes: A Systematic Approach", "type": "book", "href": "books/stoneware_glazes_currie.html", "notes": "Described as transformative \u2014 changes how you think rather than just what you know. Before-and-after"}, {"name": "Mastering Cone 6 Glazes", "type": "book", "href": "books/mastering_cone6_hansen.html", "notes": "Validated middle-temperature functional ware as worthy of rigorous chemistry attention. Treasured by"}, {"name": "Science for Potters", "type": "book", "href": "books/science_for_potters_bloomfield.html", "notes": ""}, {"name": "Colour in Glazes", "type": "book", "href": "books/colour_in_glazes_bloomfield.html", "notes": ""}, {"name": "Ceramic Glazes", "type": "book", "href": "books/ceramic_glazes_parmelee.html", "notes": "Dense industrial science heavyweight. Out of print and sought after. Most technically complete treat"}, {"name": "Ash Glazes", "type": "book", "href": "books/ash_glazes_tichane.html", "notes": "Self-published, small print runs. Treasured partly because hard to find."}, {"name": "Celadon Blues", "type": "book", "href": "books/celadon_blues_tichane.html", "notes": ""}, {"name": "Reds Reds Reds", "type": "book", "href": "books/reds_reds_reds_tichane.html", "notes": ""}, {"name": "Ohata Kaki", "type": "book", "href": "books/ohata_kaki_tichane.html", "notes": ""}, {"name": "Chinese Glazes", "type": "book", "href": "books/chinese_glazes_wood.html", "notes": "Treasured by a smaller audience but with unusual intensity. Most rigorous scientific treatment of cl"}, {"name": "Electric Kiln Ceramics", "type": "book", "href": "books/electric_kiln_ceramics_zakin.html", "notes": "Addressed oxidation firing chemistry seriously when most literature assumed reduction."}, {"name": "Ceramics: Mastering the Craft", "type": "book", "href": "books/ceramics_mastering_craft_zakin.html", "notes": ""}, {"name": "Ceramic Science for the Potter", "type": "book", "href": "books/ceramic_science_potter_lawrence.html", "notes": "Bridges engineering and studio practice more precisely than most books aimed at potters."}, {"name": "Pioneer Pottery", "type": "book", "href": "books/pioneer_pottery_cardew.html", "notes": ""}, {"name": "The World of Japanese Ceramics", "type": "book", "href": "books/world_japanese_ceramics_sanders.html", "notes": ""}, {"name": "Glazes for Special Effects", "type": "book", "href": "books/glazes_special_effects_sanders.html", "notes": ""}, {"name": "The Potter's Book of Glaze Recipes", "type": "book", "href": "books/potters_book_glaze_recipes_cooper.html", "notes": ""}, {"name": "Electric Kiln Pottery", "type": "book", "href": "books/electric_kiln_pottery_cooper.html", "notes": ""}, {"name": "Wood-Fired Stoneware and Porcelain", "type": "book", "href": "books/wood_fired_stoneware_troy.html", "notes": "Covers chemistry of ash deposition and reduction atmospheres with analytical rigor."}, {"name": "The Complete Potter's Companion", "type": "book", "href": "books/complete_potters_companion_birks.html", "notes": "Reached a mass audience; introduced glaze chemistry to potters who might not have sought it out."}, {"name": "The Potter's Studio Clay and Glaze Handbook", "type": "book", "href": "books/potters_studio_handbook_zamek.html", "notes": ""}, {"name": "Cushing's Handbook", "type": "book", "href": "books/cushings_handbook.html", "notes": "Not commercially published; circulated through Alfred University orbit. Treasured almost as artifact"}, {"name": "Elements of Ceramics", "type": "book", "href": "books/elements_ceramics_norton.html", "notes": ""}, {"name": "Fine Ceramics", "type": "book", "href": "books/fine_ceramics_norton.html", "notes": ""}, {"name": "The Potter's Craft", "type": "book", "href": "books/potters_craft_binns.html", "notes": "One of the first American texts treating pottery making as both craft and science. Includes glaze ch"}, {"name": "Grand Feu Ceramics", "type": "book", "href": "books/grand_feu_ceramics_doat.html", "notes": "First serious treatment of high-fire glaze chemistry from a practitioner. Originally in French (Gran"}, {"name": "Introduction to Ceramics", "type": "book", "href": "books/intro_ceramics_kingery.html", "notes": "THE ceramic material science textbook for 60+ years. Co-authored with H.K. Bowen and D.R. Uhlmann. C"}, {"name": "Understanding Pottery Glazes", "type": "book", "href": "books/understanding_glazes_green.html", "notes": "One of the clearest explanations of glaze chemistry for studio potters ever published. Bridges indus"}, {"name": "The Potter's Complete Book of Clay and Glazes", "type": "book", "href": "books/complete_clay_glazes_chappell.html", "notes": "The single most comprehensive recipe reference in studio ceramics. Hundreds of recipes organized by "}, {"name": "Lustre", "type": "book", "href": "books/lustre_daly.html", "notes": "Definitive guide to luster glaze chemistry and technique. Covers metallic oxide reduction films, fum"}, {"name": "Glazes and Glazing Techniques", "type": "book", "href": "books/glazes_glazing_techniques_daly.html", "notes": "Broad glaze chemistry reference with particular strength in color development and specialty effects "}, {"name": "Crystalline Glazes: Understanding the Process and Materials", "type": "book", "href": "books/crystalline_glazes_kline.html", "notes": "The modern bible of crystalline glaze chemistry. Covers zinc silicate crystal nucleation and growth,"}, {"name": "Ash Glazes", "type": "book", "href": "books/ash_glazes_rogers.html", "notes": "Practical wood-ash chemistry focused on studio use. Different from Tichane's historical reconstructi"}, {"name": "Mastering Raku", "type": "book", "href": "books/mastering_raku_branfman.html", "notes": "Definitive guide to raku chemistry and technique \u2014 carbon trapping, metallic lusters, copper reducti"}, {"name": "Soda, Clay, and Fire", "type": "book", "href": "books/soda_clay_fire_nichols.html", "notes": "Definitive guide to soda firing chemistry. Covers sodium carbonate vapor deposition mechanisms, clay"}, {"name": "Out of the Earth, Into the Fire", "type": "book", "href": "books/out_of_earth_obstler.html", "notes": "Ceramic materials science written for studio potters. Covers thermal behavior, mineralogy, phase cha"}, {"name": "Glazes for the Self-Reliant Potter", "type": "book", "href": "books/self_reliant_potter_norsker.html", "notes": "Co-authored with James Danisch. How to develop glazes from local rocks, ash, and clay without commer"}, {"name": "A Potter's Workbook", "type": "book", "href": "books/potters_workbook_illian.html", "notes": "The most practical materials-based glaze thinking text in the Leach tradition. Third-generation know"}, {"name": "Japanese Wood-Fired Ceramics", "type": "book", "href": "books/japanese_wood_fired_kusakabe.html", "notes": "Co-authored with Marc Lancet. Scientific treatment of Japanese wood-firing traditions \u2014 anagama and "}, {"name": "Unity Molecular Formula (UMF)", "type": "concept", "href": "concepts/umf.html", "notes": "Framework organizing glaze materials into flux, stabilizer (alumina), and glass former (silica) cate"}, {"name": "Currie Grid Blend Method", "type": "concept", "href": "concepts/currie_grids.html", "notes": "Systematic grid-based approach to glaze testing that maps silica and alumina variations across a mat"}, {"name": "Limit Formulas", "type": "concept", "href": "concepts/limit_formulas.html", "notes": "UMF-based ranges defining safe, functional, and aesthetically predictable glaze formulas for given f"}, {"name": "Stull Charts", "type": "concept", "href": "concepts/stull_charts.html", "notes": "Binary phase diagrams plotting silica against alumina (in UMF) to map glaze behavior \u2014 glossy, matte"}, {"name": "Phase Diagrams & Eutectics", "type": "concept", "href": "concepts/phase_diagrams.html", "notes": ""}, {"name": "Thermal Expansion & Glaze Fit", "type": "concept", "href": "concepts/thermal_expansion_glaze_fit.html", "notes": ""}, {"name": "Crystalline Glaze Theory", "type": "concept", "href": "concepts/crystalline_glaze_theory.html", "notes": ""}];
+document.getElementById("globalSearch").addEventListener("input", function() {
+  const q = this.value.toLowerCase();
+  const res = document.getElementById("searchResults");
+  if (q.length < 2) { res.style.display = "none"; return; }
+  res.style.display = "block";
+  const matches = ALL.filter(n => n.name.toLowerCase().includes(q) || n.notes.toLowerCase().includes(q));
+  if (!matches.length) { res.innerHTML = '<div style="color:var(--text-dim);font-family:var(--mono);font-size:0.8rem">No results</div>'; return; }
+  res.innerHTML = '<div class="card-grid">' + matches.slice(0,20).map(n => `
+    <div class="card"><a href="${n.href}">
+      <div class="card-name">${n.name}</div>
+      <span class="card-type type-${n.type}">${n.type}</span>
+      <div class="card-notes">${n.notes}</div>
+    </a></div>`).join("") + "</div>";
+});
+</script>
+<div class="site-footer">
+  Glaze Chemist - A free glaze chemistry reference - <a href="https://stullatlas.app">stullatlas.app</a> - <a href="https://stullatlas.app/community/">Community Atlas</a>
+</div>
+</body>
+</html>

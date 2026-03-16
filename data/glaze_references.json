@@ -1,0 +1,2465 @@
+{
+  "glaze_chemistry_references": {
+    "people": [
+      {
+        "id": "seger_hermann",
+        "name": "Hermann August Seger",
+        "era": "19th Century",
+        "nationality": "German",
+        "role": [
+          "chemist",
+          "researcher"
+        ],
+        "known_for": [
+          "Unity Molecular Formula (UMF)",
+          "flux/stabilizer/glass-former framework",
+          "foundational glaze calculation"
+        ],
+        "notes": "Established the foundational UMF system that underpins rational glaze calculation; contribution considered irreplaceable and enduring for 150+ years",
+        "tags": [
+          "historical",
+          "foundational",
+          "UMF"
+        ],
+        "institution": "Royal Porcelain Factory, Berlin (KPM)",
+        "collaborators": [
+          "Edward Orton Jr."
+        ]
+      },
+      {
+        "id": "rhodes_daniel",
+        "name": "Daniel Rhodes",
+        "era": "20th Century",
+        "nationality": "American",
+        "role": [
+          "author",
+          "educator"
+        ],
+        "known_for": [
+          "Clay and Glazes for the Potter",
+          "materials and firing behavior"
+        ],
+        "notes": "Standard text for generations; described as having a voice — unhurried, curious, authoritative. Multiple generations learned to think about materials from this book.",
+        "tags": [
+          "studio",
+          "foundational",
+          "beloved"
+        ],
+        "institution": "Alfred University",
+        "collaborators": [
+          "Val Cushing"
+        ]
+      },
+      {
+        "id": "leach_bernard",
+        "name": "Bernard Leach",
+        "era": "20th Century",
+        "nationality": "British",
+        "role": [
+          "studio potter",
+          "author",
+          "educator"
+        ],
+        "known_for": [
+          "A Potter's Book",
+          "ash glazes",
+          "feldspathic glazes",
+          "Leach tradition"
+        ],
+        "notes": "Usually discussed aesthetically but contains serious chemistry; proto-terroir glaze work before the concept existed. Book treasured in a devotional way.",
+        "tags": [
+          "studio",
+          "historical",
+          "beloved",
+          "ash glazes"
+        ],
+        "institution": "Leach Pottery, St Ives",
+        "collaborators": [
+          "Shoji Hamada",
+          "Michael Cardew",
+          "Warren MacKenzie"
+        ]
+      },
+      {
+        "id": "hamer_frank",
+        "name": "Frank Hamer",
+        "era": "20th Century",
+        "nationality": "British",
+        "role": [
+          "author"
+        ],
+        "known_for": [
+          "The Potter's Dictionary of Materials and Techniques"
+        ],
+        "collaborators": [
+          "Janet Hamer"
+        ],
+        "notes": "Often underappreciated relative to actual influence. Encyclopedic reference, treasured like a trusted tool.",
+        "tags": [
+          "reference",
+          "foundational",
+          "beloved"
+        ]
+      },
+      {
+        "id": "hamer_janet",
+        "name": "Janet Hamer",
+        "era": "20th Century",
+        "nationality": "British",
+        "role": [
+          "author"
+        ],
+        "known_for": [
+          "The Potter's Dictionary of Materials and Techniques"
+        ],
+        "collaborators": [
+          "Frank Hamer"
+        ],
+        "tags": [
+          "reference",
+          "foundational"
+        ],
+        "notes": "Co-authored The Potter's Dictionary with Frank Hamer; the collaboration produced one of the most enduring reference works in ceramics."
+      },
+      {
+        "id": "britt_john",
+        "name": "John Britt",
+        "era": "Contemporary",
+        "nationality": "American",
+        "role": [
+          "author",
+          "educator"
+        ],
+        "known_for": [
+          "The Complete Guide to High-Fire Glazes",
+          "The Complete Guide to Mid-Range Glazes",
+          "accessible glaze education"
+        ],
+        "notes": "Most-used studio references of last two decades. Studio copies often have glaze drips on pages.",
+        "tags": [
+          "studio",
+          "contemporary",
+          "popular",
+          "beloved"
+        ],
+        "collaborators": [
+          "Val Cushing"
+        ]
+      },
+      {
+        "id": "bloomfield_linda",
+        "name": "Linda Bloomfield",
+        "era": "Contemporary",
+        "nationality": "British",
+        "role": [
+          "author",
+          "educator"
+        ],
+        "known_for": [
+          "Science for Potters",
+          "Colour in Glazes",
+          "oxide experimentation",
+          "colorant chemistry"
+        ],
+        "notes": "Particularly strong on colorant chemistry; clean modern treatment bridging scientific explanation and studio practice.",
+        "tags": [
+          "contemporary",
+          "colorants",
+          "studio"
+        ]
+      },
+      {
+        "id": "cushing_val",
+        "name": "Val Cushing",
+        "era": "20th Century",
+        "nationality": "American",
+        "role": [
+          "educator",
+          "author"
+        ],
+        "institution": "Alfred University",
+        "known_for": [
+          "Cushing's Handbook",
+          "glaze recipe documentation and teaching"
+        ],
+        "notes": "Handbook circulated through Alfred's orbit, not commercially published. Treasured almost as artifact; having a copy feels like connection to a lineage.",
+        "tags": [
+          "studio",
+          "beloved",
+          "Alfred University",
+          "cult"
+        ],
+        "collaborators": [
+          "Daniel Rhodes",
+          "Matt Katz"
+        ]
+      },
+      {
+        "id": "grotell_maija",
+        "name": "Maija Grotell",
+        "era": "20th Century",
+        "nationality": "Finnish-American",
+        "role": [
+          "educator",
+          "studio potter"
+        ],
+        "known_for": [
+          "glaze chemistry education",
+          "American ceramics education"
+        ],
+        "notes": "Known as the 'Mother of American Ceramics'; revolutionary educator focused on glaze chemistry.",
+        "tags": [
+          "historical",
+          "educator",
+          "foundational"
+        ],
+        "institution": "Cranbrook Academy of Art",
+        "collaborators": [
+          "Bernard Leach"
+        ]
+      },
+      {
+        "id": "cardew_michael",
+        "name": "Michael Cardew",
+        "era": "20th Century",
+        "nationality": "British",
+        "role": [
+          "studio potter",
+          "author"
+        ],
+        "known_for": [
+          "Pioneer Pottery",
+          "studio pottery glaze practice"
+        ],
+        "notes": "Known as a 'glaze wizard' in studio pottery.",
+        "tags": [
+          "studio",
+          "historical"
+        ],
+        "institution": "Wenford Bridge Pottery",
+        "collaborators": [
+          "Bernard Leach"
+        ]
+      },
+      {
+        "id": "hopper_robin",
+        "name": "Robin Hopper",
+        "era": "20th Century",
+        "nationality": "Canadian",
+        "role": [
+          "author",
+          "educator",
+          "studio potter"
+        ],
+        "known_for": [
+          "The Ceramic Spectrum",
+          "color development",
+          "colorant chemistry"
+        ],
+        "notes": "One of the most systematic treatments of color in glazes, organized around the periodic table of colorants. People describe it as the book that made color chemistry finally make sense.",
+        "tags": [
+          "colorants",
+          "studio",
+          "beloved"
+        ]
+      },
+      {
+        "id": "hansen_tony",
+        "name": "Tony Hansen",
+        "era": "Contemporary",
+        "nationality": "Canadian",
+        "role": [
+          "author",
+          "software developer",
+          "educator"
+        ],
+        "known_for": [
+          "Digitalfire",
+          "Insight software",
+          "Mastering Cone 6 Glazes",
+          "limit formulas",
+          "material substitution"
+        ],
+        "collaborators": [
+          "John Hesselberth",
+          "Robert Desjardins",
+          "Ron Roy",
+          "Derek Au (Philipau)"
+        ],
+        "notes": "Arguably done more than anyone in the modern era to make glaze chemistry computationally accessible. Managed to be both accessible and technically serious at scale. Paradigm shift in the field.",
+        "tags": [
+          "contemporary",
+          "digital",
+          "foundational",
+          "software"
+        ],
+        "institution": "Digitalfire"
+      },
+      {
+        "id": "hesselberth_john",
+        "name": "John Hesselberth",
+        "era": "Contemporary",
+        "nationality": "American",
+        "role": [
+          "author"
+        ],
+        "known_for": [
+          "Mastering Cone 6 Glazes"
+        ],
+        "collaborators": [
+          "Tony Hansen",
+          "Ron Roy"
+        ],
+        "notes": "Co-authored the cone 6 reference that validated middle-temperature functional ware as worthy of rigorous chemistry attention.",
+        "tags": [
+          "contemporary",
+          "cone 6"
+        ]
+      },
+      {
+        "id": "currie_ian",
+        "name": "Ian Currie",
+        "era": "Contemporary",
+        "nationality": "Australian",
+        "role": [
+          "author",
+          "researcher"
+        ],
+        "known_for": [
+          "Currie grid blend method",
+          "Stoneware Glazes: A Systematic Approach",
+          "systematic glaze testing"
+        ],
+        "notes": "Developed a genuinely elegant contribution to empirical glaze research. Described as the book that changed how potters think rather than just what they know.",
+        "tags": [
+          "contemporary",
+          "systematic",
+          "beloved",
+          "testing"
+        ]
+      },
+      {
+        "id": "tichane_robert",
+        "name": "Robert Tichane",
+        "era": "20th-21st Century",
+        "nationality": "American",
+        "role": [
+          "author",
+          "researcher"
+        ],
+        "known_for": [
+          "Ash Glazes",
+          "Celadon Blues",
+          "Reds Reds Reds",
+          "Ohata Kaki",
+          "Chinese classical glaze reconstruction"
+        ],
+        "notes": "Self-published, small print runs, out of print. Treasured partly because hard to find. Obsessive writing quality comes through on every page. Influenced studio reduction firing practice in the West.",
+        "tags": [
+          "cult",
+          "historical reconstruction",
+          "ash",
+          "reduction",
+          "beloved"
+        ]
+      },
+      {
+        "id": "katz_matt",
+        "name": "Matt Katz",
+        "era": "Contemporary",
+        "nationality": "American",
+        "role": [
+          "educator",
+          "researcher"
+        ],
+        "institution": "Alfred University",
+        "known_for": [
+          "analytical chemistry in studio ceramics",
+          "XRF and SEM methods",
+          "bridging industrial and studio ceramic science"
+        ],
+        "notes": "Central to bringing analytical chemistry methods into studio ceramics education.",
+        "tags": [
+          "contemporary",
+          "analytical",
+          "Alfred University"
+        ],
+        "collaborators": [
+          "Val Cushing",
+          "John Britt"
+        ]
+      },
+      {
+        "id": "zakin_richard",
+        "name": "Richard Zakin",
+        "era": "20th Century",
+        "nationality": "American",
+        "role": [
+          "author",
+          "educator"
+        ],
+        "known_for": [
+          "Electric Kiln Ceramics",
+          "Ceramics: Mastering the Craft",
+          "oxidation glaze chemistry"
+        ],
+        "notes": "Addressed oxidation firing chemistry seriously at a time when most literature assumed reduction.",
+        "tags": [
+          "oxidation",
+          "electric kiln",
+          "studio"
+        ],
+        "institution": "SUNY Oswego"
+      },
+      {
+        "id": "sanders_herbert",
+        "name": "Herbert Sanders",
+        "era": "20th Century",
+        "nationality": "American",
+        "role": [
+          "author"
+        ],
+        "known_for": [
+          "The World of Japanese Ceramics",
+          "Glazes for Special Effects",
+          "bridging Eastern and Western glaze traditions"
+        ],
+        "notes": "Bridged Eastern glaze traditions with Western scientific analysis at a time when that crossover was rare.",
+        "tags": [
+          "historical",
+          "Japanese",
+          "specialty"
+        ],
+        "institution": "San Jose State University"
+      },
+      {
+        "id": "wood_nigel",
+        "name": "Nigel Wood",
+        "era": "Contemporary",
+        "nationality": "British",
+        "role": [
+          "scholar",
+          "author",
+          "researcher"
+        ],
+        "known_for": [
+          "Chinese Glazes",
+          "Chinese ceramic technology",
+          "spectrographic glaze analysis",
+          "historical glaze reconstruction"
+        ],
+        "notes": "Most rigorous scientific treatment of classical Chinese ceramic chemistry in English. Treasured by a smaller audience but with unusual intensity.",
+        "tags": [
+          "scholarly",
+          "historical reconstruction",
+          "Chinese",
+          "beloved",
+          "cult"
+        ],
+        "institution": "University of Westminster"
+      },
+      {
+        "id": "lawrence_wg",
+        "name": "W.G. Lawrence",
+        "era": "20th Century",
+        "role": [
+          "author",
+          "ceramic engineer"
+        ],
+        "known_for": [
+          "Ceramic Science for the Potter",
+          "silica-alumina ratios",
+          "eutectic behavior"
+        ],
+        "notes": "Brought industrial ceramic engineering methodology into studio practice. More technically precise than most studio-oriented texts.",
+        "tags": [
+          "technical",
+          "industrial",
+          "foundational"
+        ],
+        "nationality": "American"
+      },
+      {
+        "id": "norton_fh",
+        "name": "F.H. Norton",
+        "era": "20th Century",
+        "nationality": "American",
+        "role": [
+          "author",
+          "ceramic engineer"
+        ],
+        "institution": "MIT",
+        "known_for": [
+          "Elements of Ceramics",
+          "Fine Ceramics",
+          "ceramic engineering education"
+        ],
+        "notes": "Rigorous engineering texts that influenced generations of ceramic scientists and indirectly shaped studio practice through Alfred and Ohio State programs.",
+        "tags": [
+          "technical",
+          "industrial",
+          "academic"
+        ]
+      },
+      {
+        "id": "parmelee_cw",
+        "name": "C.W. Parmelee",
+        "era": "20th Century",
+        "role": [
+          "author",
+          "ceramic scientist"
+        ],
+        "known_for": [
+          "Ceramic Glazes",
+          "firing behavior",
+          "thermal expansion",
+          "viscosity calculations"
+        ],
+        "notes": "Long considered the most comprehensive technical reference on glaze science from an industrial standpoint. Dense but irreplaceable. Out of print and sought after.",
+        "tags": [
+          "technical",
+          "industrial",
+          "cult",
+          "foundational"
+        ],
+        "nationality": "American",
+        "institution": "University of Illinois",
+        "collaborators": [
+          "Edward Orton Jr."
+        ]
+      },
+      {
+        "id": "orton_edward_jr",
+        "name": "Edward Orton Jr.",
+        "era": "19th-20th Century",
+        "nationality": "American",
+        "role": [
+          "ceramic scientist",
+          "researcher"
+        ],
+        "known_for": [
+          "Orton pyrometric cones",
+          "kiln atmosphere chemistry",
+          "temperature measurement and glaze maturity"
+        ],
+        "notes": "Cone system so embedded in practice that people forget it was a significant scientific contribution.",
+        "tags": [
+          "historical",
+          "foundational",
+          "measurement"
+        ],
+        "institution": "Ohio State University / Orton Ceramic Foundation",
+        "collaborators": [
+          "Hermann August Seger",
+          "C.W. Parmelee"
+        ]
+      },
+      {
+        "id": "cooper_emmanuel",
+        "name": "Emmanuel Cooper",
+        "era": "20th-21st Century",
+        "nationality": "British",
+        "role": [
+          "author",
+          "educator",
+          "editor"
+        ],
+        "known_for": [
+          "The Potter's Book of Glaze Recipes",
+          "Electric Kiln Pottery",
+          "Ceramic Review editorship",
+          "history of world pottery"
+        ],
+        "notes": "Bridged chemistry, history, and practice across multiple books. Long-running editor of Ceramic Review, shaping how the field communicated about technical matters for decades.",
+        "tags": [
+          "studio",
+          "history",
+          "beloved"
+        ],
+        "institution": "Ceramic Review / City of Westminster College"
+      },
+      {
+        "id": "soldner_paul",
+        "name": "Paul Soldner",
+        "era": "20th Century",
+        "nationality": "American",
+        "role": [
+          "studio potter",
+          "educator",
+          "researcher"
+        ],
+        "known_for": [
+          "Western raku",
+          "post-firing reduction chemistry",
+          "low-fire reduction"
+        ],
+        "notes": "Transformed Western raku practice and forced rethinking of low-fire reduction chemistry. Post-firing reduction is chemically distinct from kiln reduction and was poorly understood before his work.",
+        "tags": [
+          "raku",
+          "reduction",
+          "studio",
+          "foundational"
+        ],
+        "institution": "Scripps College",
+        "collaborators": [
+          "Warren MacKenzie"
+        ]
+      },
+      {
+        "id": "mackenzie_warren",
+        "name": "Warren MacKenzie",
+        "era": "20th-21st Century",
+        "nationality": "American",
+        "role": [
+          "studio potter",
+          "educator"
+        ],
+        "institution": "University of Minnesota",
+        "known_for": [
+          "wood and reduction glaze behavior",
+          "Leach tradition in America"
+        ],
+        "notes": "Contributed substantially to understanding wood and reduction glaze behavior through decades of systematic practice and documentation.",
+        "tags": [
+          "reduction",
+          "wood fire",
+          "studio"
+        ],
+        "collaborators": [
+          "Bernard Leach",
+          "Shoji Hamada",
+          "Clary Illian"
+        ]
+      },
+      {
+        "id": "troy_jack",
+        "name": "Jack Troy",
+        "era": "Contemporary",
+        "nationality": "American",
+        "role": [
+          "author",
+          "studio potter"
+        ],
+        "known_for": [
+          "Wood-Fired Stoneware and Porcelain",
+          "wood-fire chemistry",
+          "salt-fire chemistry"
+        ],
+        "notes": "Documented wood-fire and salt-fire chemistry with more analytical rigor than most atmospheric firing literature.",
+        "tags": [
+          "wood fire",
+          "atmospheric",
+          "studio"
+        ],
+        "institution": "Juniata College",
+        "collaborators": [
+          "John Neely"
+        ]
+      },
+      {
+        "id": "temple_byron",
+        "name": "Byron Temple",
+        "era": "20th Century",
+        "nationality": "American",
+        "role": [
+          "studio potter",
+          "researcher"
+        ],
+        "known_for": [
+          "salt glaze chemistry",
+          "soda glaze chemistry",
+          "sodium vapor interaction with clay bodies"
+        ],
+        "notes": "Did serious practical research on salt and soda glaze chemistry at high temperatures.",
+        "tags": [
+          "salt glaze",
+          "atmospheric",
+          "studio"
+        ],
+        "institution": "Alfred University",
+        "collaborators": [
+          "Daniel Rhodes",
+          "Val Cushing"
+        ]
+      },
+      {
+        "id": "hamada_shoji",
+        "name": "Shoji Hamada",
+        "era": "20th Century",
+        "nationality": "Japanese",
+        "role": [
+          "studio potter"
+        ],
+        "known_for": [
+          "Mashiko tradition",
+          "local material glazes",
+          "regional geology and glaze character"
+        ],
+        "notes": "Left almost no written technical documentation by design, but posthumous analytical work on his glazes is chemically revealing — particularly his use of local Mashiko materials.",
+        "tags": [
+          "Japanese",
+          "studio",
+          "historical",
+          "ash glazes"
+        ],
+        "institution": "Mashiko, Japan",
+        "collaborators": [
+          "Bernard Leach",
+          "Warren MacKenzie"
+        ]
+      },
+      {
+        "id": "minogue_coll",
+        "name": "Coll Minogue",
+        "era": "Contemporary",
+        "nationality": "Irish",
+        "role": [
+          "author",
+          "studio potter"
+        ],
+        "known_for": [
+          "wood-firing chemistry",
+          "ash glaze behavior"
+        ],
+        "collaborators": [
+          "Robert Sanderson"
+        ],
+        "tags": [
+          "wood fire",
+          "ash glazes",
+          "atmospheric"
+        ],
+        "notes": "Co-authored key wood-fire chemistry texts with Robert Sanderson; practical and analytical approach to ash and atmospheric glazes."
+      },
+      {
+        "id": "sanderson_robert",
+        "name": "Robert Sanderson",
+        "era": "Contemporary",
+        "role": [
+          "author"
+        ],
+        "known_for": [
+          "wood-firing chemistry",
+          "ash glaze behavior"
+        ],
+        "collaborators": [
+          "Coll Minogue"
+        ],
+        "tags": [
+          "wood fire",
+          "ash glazes",
+          "atmospheric"
+        ],
+        "nationality": "British",
+        "notes": "Co-authored wood-fire chemistry texts with Coll Minogue; systematic documentation of ash glaze behavior."
+      },
+      {
+        "id": "neely_john",
+        "name": "John Neely",
+        "era": "Contemporary",
+        "nationality": "American",
+        "role": [
+          "educator",
+          "researcher"
+        ],
+        "institution": "Utah State University",
+        "known_for": [
+          "wood-fire chemistry",
+          "kiln atmosphere analysis",
+          "spectroscopic methods in firing analysis"
+        ],
+        "notes": "Brought spectroscopic methods to questions that previously relied on visual assessment.",
+        "tags": [
+          "wood fire",
+          "atmospheric",
+          "analytical",
+          "contemporary"
+        ],
+        "collaborators": [
+          "Jack Troy"
+        ]
+      },
+      {
+        "id": "zamek_jeff",
+        "name": "Jeff Zamek",
+        "era": "Contemporary",
+        "nationality": "American",
+        "role": [
+          "author"
+        ],
+        "known_for": [
+          "The Potter's Studio Clay and Glaze Handbook"
+        ],
+        "notes": "More recent practical reference covering materials and glaze formulation together.",
+        "tags": [
+          "studio",
+          "contemporary",
+          "practical"
+        ]
+      },
+      {
+        "id": "birks_tony",
+        "name": "Tony Birks",
+        "era": "20th Century",
+        "nationality": "British",
+        "role": [
+          "author"
+        ],
+        "known_for": [
+          "The Complete Potter's Companion"
+        ],
+        "notes": "Reached a mass audience and introduced glaze chemistry to potters who might not have sought it out.",
+        "tags": [
+          "popular",
+          "introductory"
+        ]
+      },
+      {
+        "id": "desjardins_robert",
+        "name": "Robert Desjardins",
+        "era": "Contemporary",
+        "role": [
+          "software developer",
+          "database developer"
+        ],
+        "known_for": [
+          "Digitalfire database infrastructure"
+        ],
+        "collaborators": [
+          "Tony Hansen"
+        ],
+        "notes": "Helped build the computational infrastructure underlying Digitalfire.",
+        "tags": [
+          "digital",
+          "software",
+          "contemporary"
+        ],
+        "nationality": "Canadian"
+      },
+      {
+        "id": "stull_ray",
+        "name": "R.T. Stull",
+        "era": "Early 20th century",
+        "nationality": "American",
+        "role": [
+          "ceramic engineer",
+          "researcher"
+        ],
+        "known_for": [
+          "Stull Charts — binary phase diagrams mapping silica-alumina ratios to predict glaze surface quality",
+          "Systematic glaze classification by oxide ratios",
+          "Early scientific approach to glaze formulation"
+        ],
+        "institution": "University of Illinois",
+        "collaborators": [],
+        "notes": "Published landmark work on plotting glaze compositions on silica-alumina diagrams. His charts remain a standard visual tool for understanding how alumina and silica ratios affect glaze melt, surface, and matteness. Predates and complements Currie's grid approach.",
+        "tags": [
+          "foundational",
+          "historical",
+          "calculation",
+          "academic"
+        ]
+      },
+      {
+        "id": "philipau_derek",
+        "name": "Derek Au (Philipau)",
+        "era": "Contemporary",
+        "nationality": "American",
+        "role": [
+          "developer",
+          "educator"
+        ],
+        "institution": "Glazy.org",
+        "known_for": [
+          "Glazy.org — largest open glaze chemistry database",
+          "UMF calculator and visualization tools",
+          "open-source glaze data democratization"
+        ],
+        "notes": "Created and maintains Glazy.org, the world's largest open ceramics database with 340K+ entries. Made UMF calculation and glaze chemistry accessible to every potter with a browser. Open-source (Laravel+Vue). The dataset that feeds Stull Atlas.",
+        "tags": [
+          "contemporary",
+          "database",
+          "open-source",
+          "foundational"
+        ],
+        "collaborators": [
+          "Tony Hansen",
+          "Pieter Mostert"
+        ]
+      },
+      {
+        "id": "binns_charles",
+        "name": "Charles Fergus Binns",
+        "era": "19th-20th Century",
+        "nationality": "British-American",
+        "role": [
+          "educator",
+          "author",
+          "ceramic scientist"
+        ],
+        "institution": "Alfred University / New York State College of Ceramics",
+        "known_for": [
+          "Founded first US ceramics program (Alfred, 1900)",
+          "The Potter's Craft",
+          "father of American ceramic education"
+        ],
+        "notes": "Son of the director of Royal Worcester. Founded the ceramics program at Alfred University in 1900 — the root node of American glaze education. Rhodes, Cushing, and almost everyone downstream traces back to Alfred. Wrote The Potter's Craft (1910).",
+        "tags": [
+          "historical",
+          "foundational",
+          "education",
+          "Alfred University"
+        ],
+        "collaborators": []
+      },
+      {
+        "id": "robineau_adelaide",
+        "name": "Adelaide Alsop Robineau",
+        "era": "19th-20th Century",
+        "nationality": "American",
+        "role": [
+          "studio potter",
+          "editor",
+          "researcher"
+        ],
+        "institution": "University City / Keramic Studio magazine",
+        "known_for": [
+          "Keramic Studio magazine editorship",
+          "crystalline glaze pioneering",
+          "Scarab Vase (1910)",
+          "porcelain and high-fire experimentation"
+        ],
+        "notes": "Editor of Keramic Studio (precursor to Ceramics Monthly). Crystalline glaze pioneer who achieved results nobody could replicate for decades. The Scarab Vase took 1000+ hours of carving on a single porcelain form. Applied scientific method to glaze development before it was standard practice.",
+        "tags": [
+          "historical",
+          "foundational",
+          "crystalline",
+          "porcelain"
+        ],
+        "collaborators": [
+          "Taxile Doat"
+        ]
+      },
+      {
+        "id": "roy_ron",
+        "name": "Ron Roy",
+        "era": "20th-21st Century",
+        "nationality": "Canadian",
+        "role": [
+          "researcher",
+          "educator"
+        ],
+        "known_for": [
+          "cone 6 oxidation revolution",
+          "systematic glaze testing",
+          "food safety in glazes",
+          "collaboration with Tony Hansen"
+        ],
+        "notes": "Co-developer of the cone 6 oxidation movement. His systematic testing made cone 6 viable as a production temperature — directly influencing thousands of studios to move away from cone 10. Third leg of the Hansen-Hesselberth-Roy stool. Deeply concerned with glaze safety and leaching.",
+        "tags": [
+          "contemporary",
+          "cone 6",
+          "testing",
+          "safety"
+        ],
+        "collaborators": [
+          "Tony Hansen",
+          "John Hesselberth"
+        ]
+      },
+      {
+        "id": "doat_taxile",
+        "name": "Taxile Doat",
+        "era": "19th-20th Century",
+        "nationality": "French",
+        "role": [
+          "studio potter",
+          "author",
+          "researcher"
+        ],
+        "institution": "Sèvres Porcelain Manufactory / University City",
+        "known_for": [
+          "Grand Feu Ceramics (1905)",
+          "crystalline glaze chemistry",
+          "zinc crystal growth",
+          "pâte-sur-pâte"
+        ],
+        "notes": "Master ceramist at Sèvres who figured out zinc crystal growth before anyone had the phase diagrams to explain why. Grand Feu Ceramics (1905) was the first serious treatment of high-fire glaze chemistry from a practitioner. Directly influenced Robineau and the University City experiment.",
+        "tags": [
+          "historical",
+          "foundational",
+          "crystalline",
+          "French"
+        ],
+        "collaborators": [
+          "Adelaide Alsop Robineau"
+        ]
+      },
+      {
+        "id": "kingery_david",
+        "name": "W. David Kingery",
+        "era": "20th Century",
+        "nationality": "American",
+        "role": [
+          "author",
+          "ceramic scientist",
+          "researcher"
+        ],
+        "institution": "MIT / University of Arizona",
+        "known_for": [
+          "Introduction to Ceramics",
+          "thermal analysis framework",
+          "ceramic material science",
+          "phase equilibria in glazes"
+        ],
+        "notes": "THE textbook author for ceramic material science. Introduction to Ceramics (1960, co-authored) defined the field for 60+ years. His thermal expansion, coefficient of thermal expansion, and glaze fit frameworks underpin half the calculations in modern glaze software. Bridged pure material science and applied ceramics.",
+        "tags": [
+          "academic",
+          "foundational",
+          "industrial",
+          "material science"
+        ],
+        "collaborators": []
+      },
+      {
+        "id": "pinnell_pete",
+        "name": "Pete Pinnell",
+        "era": "Contemporary",
+        "nationality": "American",
+        "role": [
+          "educator",
+          "researcher",
+          "studio potter"
+        ],
+        "institution": "University of Nebraska-Lincoln",
+        "known_for": [
+          "crystalline glaze chemistry education",
+          "systematic glaze workshop method",
+          "specialty glaze chemistry"
+        ],
+        "notes": "One of the most respected living glaze chemistry educators. His workshops are deeply analytical — real chemistry, not just recipes. Systematic approach to crystalline, specialty, and surface-effect glazes. Teaches potters to think in oxides, not ingredients.",
+        "tags": [
+          "contemporary",
+          "education",
+          "crystalline",
+          "systematic"
+        ],
+        "collaborators": []
+      },
+      {
+        "id": "green_david",
+        "name": "David Green",
+        "era": "20th Century",
+        "nationality": "British",
+        "role": [
+          "author",
+          "educator"
+        ],
+        "known_for": [
+          "Understanding Pottery Glazes",
+          "clear explanations of glaze chemistry for studio potters"
+        ],
+        "notes": "Wrote one of the clearest explanations of glaze chemistry for studio potters ever published. Understanding Pottery Glazes bridges the gap between industrial ceramic science and studio practice without dumbing anything down.",
+        "tags": [
+          "studio",
+          "education",
+          "British"
+        ],
+        "collaborators": []
+      },
+      {
+        "id": "chappell_james",
+        "name": "James Chappell",
+        "era": "20th-21st Century",
+        "nationality": "American",
+        "role": [
+          "author"
+        ],
+        "known_for": [
+          "The Potter's Complete Book of Clay and Glazes",
+          "comprehensive recipe reference"
+        ],
+        "notes": "Wrote the single most comprehensive recipe reference book in studio ceramics — hundreds of recipes with chemistry, organized by type, cone, and atmosphere. A workhorse book that sits next to the kiln, not on the shelf. Multiple revised editions.",
+        "tags": [
+          "studio",
+          "reference",
+          "recipes"
+        ],
+        "collaborators": []
+      },
+      {
+        "id": "daly_greg",
+        "name": "Greg Daly",
+        "era": "Contemporary",
+        "nationality": "Australian",
+        "role": [
+          "studio potter",
+          "author",
+          "educator"
+        ],
+        "known_for": [
+          "Lustre",
+          "Glazes and Glazing Techniques",
+          "luster glaze chemistry",
+          "metallic oxide reduction films"
+        ],
+        "notes": "Leading authority on luster glazes and their chemistry. Covers a domain nobody else in glaze literature treats with this depth — the metallic oxide reduction films that create iridescent surfaces. Also expert in fuming techniques.",
+        "tags": [
+          "contemporary",
+          "luster",
+          "specialty",
+          "Australian"
+        ],
+        "collaborators": []
+      },
+      {
+        "id": "kline_gabriel",
+        "name": "Gabriel Kline",
+        "era": "Contemporary",
+        "nationality": "American",
+        "role": [
+          "author",
+          "studio potter",
+          "educator"
+        ],
+        "known_for": [
+          "Crystalline Glazes: Understanding the Process and Materials",
+          "zinc silicate crystal growth",
+          "crystalline glaze firing schedules"
+        ],
+        "notes": "Wrote the modern bible of crystalline glaze chemistry. Covers zinc silicate crystal nucleation and growth, firing schedules, cooling curves, and seeding techniques with real science. Fills a gap no other single book covers at this depth.",
+        "tags": [
+          "contemporary",
+          "crystalline",
+          "specialty"
+        ],
+        "collaborators": []
+      },
+      {
+        "id": "rogers_phil",
+        "name": "Phil Rogers",
+        "era": "20th-21st Century",
+        "nationality": "British (Welsh)",
+        "role": [
+          "studio potter",
+          "author"
+        ],
+        "known_for": [
+          "Ash Glazes (practical guide)",
+          "wood-ash chemistry for studio use",
+          "salt and soda glazes"
+        ],
+        "notes": "Different from Tichane's historical reconstruction approach — Phil's Ash Glazes is practical wood-ash chemistry focused on studio use. Also wrote on salt glazes. Welsh potter who worked with local materials and understood their chemistry intimately.",
+        "tags": [
+          "studio",
+          "ash",
+          "wood-fire",
+          "British"
+        ],
+        "collaborators": []
+      },
+      {
+        "id": "finkelnburg_dave",
+        "name": "Dave Finkelnburg",
+        "era": "Contemporary",
+        "nationality": "American",
+        "role": [
+          "educator",
+          "researcher"
+        ],
+        "known_for": [
+          "glaze fit analysis",
+          "thermal expansion matching",
+          "crazing and shivering diagnosis",
+          "online glaze chemistry education"
+        ],
+        "notes": "Active educator who writes extensively about glaze fit, thermal expansion, crazing vs. shivering. Applies analytical chemistry to everyday studio problems. Very active in the online glaze chemistry community — Clayart, Glazy forums, Ceramic Arts Network.",
+        "tags": [
+          "contemporary",
+          "analytical",
+          "glaze fit",
+          "education"
+        ],
+        "collaborators": []
+      },
+      {
+        "id": "severijns_hein",
+        "name": "Hein Severijns",
+        "era": "Contemporary",
+        "nationality": "Dutch",
+        "role": [
+          "developer"
+        ],
+        "known_for": [
+          "GlazeMaster software",
+          "early computational glaze chemistry"
+        ],
+        "notes": "Created GlazeMaster, one of the earliest glaze calculation software packages alongside Hansen's Insight. Part of the software-makes-chemistry-accessible story of the 1990s-2000s.",
+        "tags": [
+          "contemporary",
+          "software",
+          "computational"
+        ],
+        "collaborators": []
+      },
+      {
+        "id": "branfman_steve",
+        "name": "Steve Branfman",
+        "era": "Contemporary",
+        "nationality": "American",
+        "role": [
+          "author",
+          "studio potter",
+          "educator"
+        ],
+        "institution": "The Potters Shop, Needham MA",
+        "known_for": [
+          "Mastering Raku",
+          "low-fire reduction chemistry",
+          "luster and carbon trapping",
+          "raku glaze formulation"
+        ],
+        "notes": "Wrote the definitive practical guide to raku chemistry — carbon trapping, metallic lusters, copper reduction, post-firing chemistry. Narrow domain but deep expertise. Runs The Potters Shop in Massachusetts.",
+        "tags": [
+          "contemporary",
+          "raku",
+          "low-fire",
+          "reduction"
+        ],
+        "collaborators": []
+      },
+      {
+        "id": "abu_al_qasim",
+        "name": "Abu'l-Qasim",
+        "era": "Medieval (fl. 1301)",
+        "nationality": "Persian",
+        "role": [
+          "author",
+          "ceramist"
+        ],
+        "institution": "Kashan tile workshops",
+        "known_for": [
+          "First known treatise on ceramic technology (1301)",
+          "luster glaze documentation",
+          "tin opacification",
+          "frit chemistry",
+          "kiln design documentation"
+        ],
+        "notes": "Wrote the first known treatise on ceramic technology in 1301, documenting the glaze and tile-making traditions of Kashan, Persia. Describes luster glaze preparation, tin opacification for white grounds, frit chemistry, and kiln construction. Everything in glaze chemistry descends from someone deciding to write it down instead of just doing it. This is that person.",
+        "tags": [
+          "historical",
+          "foundational",
+          "medieval",
+          "Persian",
+          "luster"
+        ],
+        "collaborators": []
+      },
+      {
+        "id": "dentrecolles_francois",
+        "name": "Père d'Entrecolles (François Xavier d'Entrecolles)",
+        "era": "17th-18th Century",
+        "nationality": "French",
+        "role": [
+          "observer",
+          "author"
+        ],
+        "institution": "Jesuit Mission, Jingdezhen",
+        "known_for": [
+          "Letters from Jingdezhen (1712, 1722)",
+          "first Western documentation of Chinese porcelain manufacture",
+          "kaolin and petuntse identification",
+          "East-to-West ceramic knowledge transfer"
+        ],
+        "notes": "Jesuit missionary stationed in Jingdezhen, China's porcelain capital. His two letters (1712, 1722) describing Chinese porcelain and glaze manufacture in precise detail were industrial espionage that changed Western ceramics forever. Identified kaolin and petuntse (china stone) as the two essential ingredients. Without him, European high-fire glaze chemistry would have been delayed by decades. The bridge between East and West.",
+        "tags": [
+          "historical",
+          "foundational",
+          "Chinese",
+          "porcelain"
+        ],
+        "collaborators": []
+      },
+      {
+        "id": "wedgwood_josiah",
+        "name": "Josiah Wedgwood",
+        "era": "18th Century",
+        "nationality": "British",
+        "role": [
+          "industrialist",
+          "researcher",
+          "inventor"
+        ],
+        "institution": "Wedgwood / Etruria Works",
+        "known_for": [
+          "systematic experimental method for ceramics",
+          "Experiment Book (5,000+ trials)",
+          "pyrometer invention",
+          "jasperware and basalt glaze chemistry",
+          "industrial-scale glaze quality control"
+        ],
+        "notes": "Invented systematic experimental method for ceramics a century before anyone else. His Experiment Book documents 5,000+ methodical trials — varying one ingredient at a time, recording results. Invented a pyrometer for kiln temperature measurement. Was doing what Ian Currie formalized 200 years later. Fellow of the Royal Society. If Seger is the father of glaze calculation, Wedgwood is the father of glaze experimentation.",
+        "tags": [
+          "historical",
+          "foundational",
+          "experimental",
+          "industrial"
+        ],
+        "collaborators": []
+      },
+      {
+        "id": "nichols_gail",
+        "name": "Gail Nichols",
+        "era": "Contemporary",
+        "nationality": "Australian",
+        "role": [
+          "studio potter",
+          "author",
+          "educator"
+        ],
+        "known_for": [
+          "Soda, Clay, and Fire",
+          "soda firing chemistry",
+          "sodium carbonate vapor deposition",
+          "soda vs salt glaze chemistry distinction"
+        ],
+        "notes": "Wrote the definitive book on soda glazing chemistry. Covers the vapor deposition mechanism, how sodium carbonate interacts with different clay bodies, and the surface chemistry that distinguishes soda from salt firing. Fills a major domain gap — soda firing is chemically distinct from salt (sodium carbonate vs sodium chloride) but often lumped together.",
+        "tags": [
+          "contemporary",
+          "soda firing",
+          "atmospheric",
+          "Australian"
+        ],
+        "collaborators": []
+      },
+      {
+        "id": "obstler_mimi",
+        "name": "Mimi Obstler",
+        "era": "Contemporary",
+        "nationality": "American",
+        "role": [
+          "author",
+          "educator"
+        ],
+        "known_for": [
+          "Out of the Earth, Into the Fire",
+          "ceramic materials science for studio potters",
+          "thermal behavior and mineralogy",
+          "phase changes in the kiln"
+        ],
+        "notes": "Bridges materials science and studio practice in a way that's genuinely accessible. Out of the Earth, Into the Fire covers thermal behavior, mineralogy, phase changes, and chemical reactions in the kiln — everything Parmelee and Norton cover but written for people who fire kilns, not run factories. Often the first recommendation when a potter asks 'I want to understand WHY glazes do what they do.'",
+        "tags": [
+          "contemporary",
+          "material science",
+          "education",
+          "studio"
+        ],
+        "collaborators": []
+      },
+      {
+        "id": "norsker_henrik",
+        "name": "Henrik Norsker",
+        "era": "Contemporary",
+        "nationality": "Danish",
+        "role": [
+          "author",
+          "researcher",
+          "development worker"
+        ],
+        "known_for": [
+          "Glazes for the Self-Reliant Potter",
+          "local materials glaze development",
+          "developing-world ceramics",
+          "geology-first glaze formulation"
+        ],
+        "notes": "Co-authored Glazes for the Self-Reliant Potter (with James Danisch) — how to develop glazes from local rocks, ash, and clay when commercial materials aren't available. Published through a developing-world ceramics organization. Represents a fundamentally different approach: geology-first instead of catalog-first. This is the original approach to glaze chemistry — every tradition before suppliers existed worked this way.",
+        "tags": [
+          "contemporary",
+          "local materials",
+          "development",
+          "geology"
+        ],
+        "collaborators": [
+          "James Danisch"
+        ]
+      },
+      {
+        "id": "illian_clary",
+        "name": "Clary Illian",
+        "era": "Contemporary",
+        "nationality": "American",
+        "role": [
+          "studio potter",
+          "author",
+          "educator"
+        ],
+        "known_for": [
+          "A Potter's Workbook",
+          "Leach-MacKenzie tradition third generation",
+          "materials-based glaze thinking"
+        ],
+        "notes": "Studied under Warren MacKenzie, who studied under Bernard Leach. Represents the third generation of the Leach tradition with real chemistry understanding, not just aesthetics. A Potter's Workbook is the most practical 'here's how to think about glazes from raw materials' text in that lineage. Completes the Leach → MacKenzie → Illian chain.",
+        "tags": [
+          "contemporary",
+          "studio",
+          "Leach tradition",
+          "materials"
+        ],
+        "collaborators": [
+          "Warren MacKenzie"
+        ]
+      },
+      {
+        "id": "mostert_pieter",
+        "name": "Pieter Mostert",
+        "era": "Contemporary",
+        "nationality": "South African",
+        "role": [
+          "researcher",
+          "developer"
+        ],
+        "known_for": [
+          "computational glaze analysis",
+          "Glazy dataset statistical analysis",
+          "oxide space clustering",
+          "open-source glaze data science"
+        ],
+        "notes": "Active researcher doing computational analysis of the Glazy dataset. His glazy-data-analysis GitHub repository is prior art for statistical analysis of glaze chemistry space — clustering, visualization, and pattern discovery in oxide data. Python-based, open-source. Represents the emerging intersection of data science and ceramic chemistry.",
+        "tags": [
+          "contemporary",
+          "computational",
+          "data science",
+          "open-source"
+        ],
+        "collaborators": [
+          "Derek Au (Philipau)"
+        ]
+      },
+      {
+        "id": "kusakabe_masakazu",
+        "name": "Masakazu Kusakabe",
+        "era": "Contemporary",
+        "nationality": "Japanese",
+        "role": [
+          "studio potter",
+          "author",
+          "educator"
+        ],
+        "known_for": [
+          "Japanese Wood-Fired Ceramics",
+          "anagama and noborigama kiln science",
+          "ash deposit chemistry",
+          "Japanese firing atmosphere analysis"
+        ],
+        "notes": "Co-authored Japanese Wood-Fired Ceramics (with Marc Lancet) — scientific treatment of anagama and noborigama atmosphere chemistry, ash deposit mechanisms, wadding chemistry. Not romanticized — actual kiln science from a Japanese master who bridges Japanese empirical tradition and Western analytical frameworks. Fills the gap for Japanese wood-firing science from the inside.",
+        "tags": [
+          "contemporary",
+          "wood-fire",
+          "Japanese",
+          "kiln science"
+        ],
+        "collaborators": [
+          "Marc Lancet"
+        ]
+      }
+    ],
+    "books": [
+      {
+        "id": "clay_glazes_rhodes",
+        "title": "Clay and Glazes for the Potter",
+        "author_ids": [
+          "rhodes_daniel"
+        ],
+        "first_published": 1957,
+        "subject": [
+          "materials",
+          "firing behavior",
+          "glaze chemistry"
+        ],
+        "community_status": "treasured",
+        "notes": "Standard text for generations. Described as having a voice — unhurried, curious, authoritative. Treasured the way musicians treasure a particular record.",
+        "tags": [
+          "foundational",
+          "beloved",
+          "studio"
+        ]
+      },
+      {
+        "id": "potters_book_leach",
+        "title": "A Potter's Book",
+        "author_ids": [
+          "leach_bernard"
+        ],
+        "subject": [
+          "studio pottery",
+          "ash glazes",
+          "feldspathic glazes",
+          "philosophy of making"
+        ],
+        "community_status": "treasured",
+        "notes": "Contains glaze chemistry embedded in a philosophy of making. Treasured in a devotional way beyond technical utility. Proto-terroir glaze work.",
+        "tags": [
+          "foundational",
+          "beloved",
+          "devotional",
+          "ash glazes"
+        ]
+      },
+      {
+        "id": "potters_dictionary_hamer",
+        "title": "The Potter's Dictionary of Materials and Techniques",
+        "author_ids": [
+          "hamer_frank",
+          "hamer_janet"
+        ],
+        "subject": [
+          "materials",
+          "techniques",
+          "chemistry",
+          "processes"
+        ],
+        "community_status": "treasured",
+        "notes": "Arguably the single most comprehensive reference in the field. Treasured like a trusted tool — worn spines, penciled annotations, tabs.",
+        "tags": [
+          "reference",
+          "foundational",
+          "beloved",
+          "encyclopedic"
+        ]
+      },
+      {
+        "id": "high_fire_glazes_britt",
+        "title": "The Complete Guide to High-Fire Glazes",
+        "author_ids": [
+          "britt_john"
+        ],
+        "subject": [
+          "high-fire glazes",
+          "glaze recipes",
+          "glaze chemistry"
+        ],
+        "community_status": "popular/treasured",
+        "notes": "Most-used studio reference of last two decades. Recipe-heavy but with solid chemistry explanations.",
+        "tags": [
+          "studio",
+          "recipes",
+          "popular",
+          "beloved"
+        ]
+      },
+      {
+        "id": "mid_range_glazes_britt",
+        "title": "The Complete Guide to Mid-Range Glazes",
+        "author_ids": [
+          "britt_john"
+        ],
+        "subject": [
+          "mid-range glazes",
+          "cone 4-7",
+          "glaze chemistry"
+        ],
+        "community_status": "popular",
+        "tags": [
+          "studio",
+          "recipes",
+          "popular",
+          "cone 6"
+        ]
+      },
+      {
+        "id": "ceramic_spectrum_hopper",
+        "title": "The Ceramic Spectrum",
+        "author_ids": [
+          "hopper_robin"
+        ],
+        "subject": [
+          "colorants",
+          "color development",
+          "oxide chemistry"
+        ],
+        "community_status": "treasured",
+        "notes": "Organized around the periodic table of colorants. People describe it as the book that made color chemistry finally make sense.",
+        "tags": [
+          "colorants",
+          "beloved",
+          "systematic"
+        ]
+      },
+      {
+        "id": "stoneware_glazes_currie",
+        "title": "Stoneware Glazes: A Systematic Approach",
+        "author_ids": [
+          "currie_ian"
+        ],
+        "subject": [
+          "glaze testing",
+          "grid blend methodology",
+          "systematic testing"
+        ],
+        "community_status": "treasured/cult",
+        "notes": "Described as transformative — changes how you think rather than just what you know. Before-and-after book for many potters.",
+        "tags": [
+          "systematic",
+          "beloved",
+          "testing",
+          "cult"
+        ]
+      },
+      {
+        "id": "mastering_cone6_hansen",
+        "title": "Mastering Cone 6 Glazes",
+        "author_ids": [
+          "hansen_tony",
+          "hesselberth_john"
+        ],
+        "subject": [
+          "cone 6",
+          "functional ware",
+          "glaze chemistry",
+          "limit formulas"
+        ],
+        "community_status": "treasured",
+        "notes": "Validated middle-temperature functional ware as worthy of rigorous chemistry attention. Treasured by functional ware potters.",
+        "tags": [
+          "cone 6",
+          "functional",
+          "beloved"
+        ]
+      },
+      {
+        "id": "science_for_potters_bloomfield",
+        "title": "Science for Potters",
+        "author_ids": [
+          "bloomfield_linda"
+        ],
+        "subject": [
+          "ceramic science",
+          "glaze chemistry",
+          "materials"
+        ],
+        "community_status": "popular",
+        "tags": [
+          "contemporary",
+          "introductory",
+          "science"
+        ]
+      },
+      {
+        "id": "colour_in_glazes_bloomfield",
+        "title": "Colour in Glazes",
+        "author_ids": [
+          "bloomfield_linda"
+        ],
+        "subject": [
+          "colorants",
+          "color development",
+          "glaze chemistry"
+        ],
+        "community_status": "popular",
+        "tags": [
+          "contemporary",
+          "colorants"
+        ]
+      },
+      {
+        "id": "ceramic_glazes_parmelee",
+        "title": "Ceramic Glazes",
+        "author_ids": [
+          "parmelee_cw"
+        ],
+        "subject": [
+          "glaze science",
+          "industrial ceramics",
+          "firing behavior",
+          "thermal expansion",
+          "viscosity"
+        ],
+        "community_status": "cult/treasured",
+        "out_of_print": true,
+        "notes": "Dense industrial science heavyweight. Out of print and sought after. Most technically complete treatment of glaze physics and chemistry from a formulation standpoint.",
+        "tags": [
+          "technical",
+          "industrial",
+          "cult",
+          "out of print",
+          "foundational"
+        ]
+      },
+      {
+        "id": "ash_glazes_tichane",
+        "title": "Ash Glazes",
+        "author_ids": [
+          "tichane_robert"
+        ],
+        "subject": [
+          "ash glazes",
+          "historical reconstruction"
+        ],
+        "community_status": "cult",
+        "out_of_print": true,
+        "notes": "Self-published, small print runs. Treasured partly because hard to find.",
+        "tags": [
+          "cult",
+          "ash glazes",
+          "out of print",
+          "beloved"
+        ]
+      },
+      {
+        "id": "celadon_blues_tichane",
+        "title": "Celadon Blues",
+        "author_ids": [
+          "tichane_robert"
+        ],
+        "subject": [
+          "celadon",
+          "iron glazes",
+          "Chinese glaze reconstruction"
+        ],
+        "community_status": "cult",
+        "out_of_print": true,
+        "tags": [
+          "cult",
+          "celadon",
+          "out of print",
+          "historical reconstruction"
+        ]
+      },
+      {
+        "id": "reds_reds_reds_tichane",
+        "title": "Reds Reds Reds",
+        "author_ids": [
+          "tichane_robert"
+        ],
+        "subject": [
+          "copper red glazes",
+          "reduction glazes",
+          "Chinese glaze reconstruction"
+        ],
+        "community_status": "cult",
+        "out_of_print": true,
+        "tags": [
+          "cult",
+          "copper red",
+          "reduction",
+          "out of print",
+          "historical reconstruction"
+        ]
+      },
+      {
+        "id": "ohata_kaki_tichane",
+        "title": "Ohata Kaki",
+        "author_ids": [
+          "tichane_robert"
+        ],
+        "subject": [
+          "persimmon glazes",
+          "Japanese glaze traditions"
+        ],
+        "community_status": "cult",
+        "out_of_print": true,
+        "tags": [
+          "cult",
+          "Japanese",
+          "out of print"
+        ]
+      },
+      {
+        "id": "chinese_glazes_wood",
+        "title": "Chinese Glazes",
+        "author_ids": [
+          "wood_nigel"
+        ],
+        "subject": [
+          "Chinese ceramic chemistry",
+          "historical glaze reconstruction",
+          "spectrographic analysis"
+        ],
+        "community_status": "treasured/scholarly",
+        "notes": "Treasured by a smaller audience but with unusual intensity. Most rigorous scientific treatment of classical Chinese ceramic chemistry in English.",
+        "tags": [
+          "scholarly",
+          "historical reconstruction",
+          "Chinese",
+          "beloved"
+        ]
+      },
+      {
+        "id": "electric_kiln_ceramics_zakin",
+        "title": "Electric Kiln Ceramics",
+        "author_ids": [
+          "zakin_richard"
+        ],
+        "subject": [
+          "oxidation glazes",
+          "electric kiln",
+          "glaze chemistry"
+        ],
+        "community_status": "popular",
+        "notes": "Addressed oxidation firing chemistry seriously when most literature assumed reduction.",
+        "tags": [
+          "oxidation",
+          "electric kiln",
+          "studio"
+        ]
+      },
+      {
+        "id": "ceramics_mastering_craft_zakin",
+        "title": "Ceramics: Mastering the Craft",
+        "author_ids": [
+          "zakin_richard"
+        ],
+        "subject": [
+          "ceramics",
+          "glazes",
+          "studio practice"
+        ],
+        "community_status": "popular",
+        "tags": [
+          "studio",
+          "general"
+        ]
+      },
+      {
+        "id": "ceramic_science_potter_lawrence",
+        "title": "Ceramic Science for the Potter",
+        "author_ids": [
+          "lawrence_wg"
+        ],
+        "subject": [
+          "ceramic science",
+          "silica-alumina ratios",
+          "eutectic behavior",
+          "industrial methods"
+        ],
+        "community_status": "respected",
+        "notes": "Bridges engineering and studio practice more precisely than most books aimed at potters.",
+        "tags": [
+          "technical",
+          "science",
+          "foundational"
+        ]
+      },
+      {
+        "id": "pioneer_pottery_cardew",
+        "title": "Pioneer Pottery",
+        "author_ids": [
+          "cardew_michael"
+        ],
+        "subject": [
+          "studio pottery",
+          "glaze practice",
+          "pottery traditions"
+        ],
+        "community_status": "respected",
+        "tags": [
+          "studio",
+          "historical"
+        ]
+      },
+      {
+        "id": "world_japanese_ceramics_sanders",
+        "title": "The World of Japanese Ceramics",
+        "author_ids": [
+          "sanders_herbert"
+        ],
+        "subject": [
+          "Japanese ceramics",
+          "Eastern glaze traditions"
+        ],
+        "community_status": "respected",
+        "tags": [
+          "Japanese",
+          "historical"
+        ]
+      },
+      {
+        "id": "glazes_special_effects_sanders",
+        "title": "Glazes for Special Effects",
+        "author_ids": [
+          "sanders_herbert"
+        ],
+        "subject": [
+          "specialty glazes",
+          "glaze effects"
+        ],
+        "community_status": "respected",
+        "tags": [
+          "specialty",
+          "studio"
+        ]
+      },
+      {
+        "id": "potters_book_glaze_recipes_cooper",
+        "title": "The Potter's Book of Glaze Recipes",
+        "author_ids": [
+          "cooper_emmanuel"
+        ],
+        "subject": [
+          "glaze recipes",
+          "studio glazes"
+        ],
+        "community_status": "popular",
+        "tags": [
+          "recipes",
+          "studio",
+          "popular"
+        ]
+      },
+      {
+        "id": "electric_kiln_pottery_cooper",
+        "title": "Electric Kiln Pottery",
+        "author_ids": [
+          "cooper_emmanuel"
+        ],
+        "subject": [
+          "oxidation glazes",
+          "electric kiln"
+        ],
+        "community_status": "popular",
+        "tags": [
+          "oxidation",
+          "electric kiln"
+        ]
+      },
+      {
+        "id": "wood_fired_stoneware_troy",
+        "title": "Wood-Fired Stoneware and Porcelain",
+        "author_ids": [
+          "troy_jack"
+        ],
+        "subject": [
+          "wood fire",
+          "ash deposition",
+          "reduction atmospheres",
+          "stoneware",
+          "porcelain"
+        ],
+        "community_status": "respected",
+        "notes": "Covers chemistry of ash deposition and reduction atmospheres with analytical rigor.",
+        "tags": [
+          "wood fire",
+          "atmospheric",
+          "reduction"
+        ]
+      },
+      {
+        "id": "complete_potters_companion_birks",
+        "title": "The Complete Potter's Companion",
+        "author_ids": [
+          "birks_tony"
+        ],
+        "subject": [
+          "pottery",
+          "glazes",
+          "general ceramics"
+        ],
+        "community_status": "popular",
+        "notes": "Reached a mass audience; introduced glaze chemistry to potters who might not have sought it out.",
+        "tags": [
+          "introductory",
+          "popular"
+        ]
+      },
+      {
+        "id": "potters_studio_handbook_zamek",
+        "title": "The Potter's Studio Clay and Glaze Handbook",
+        "author_ids": [
+          "zamek_jeff"
+        ],
+        "subject": [
+          "clay bodies",
+          "glazes",
+          "materials"
+        ],
+        "community_status": "popular",
+        "tags": [
+          "studio",
+          "contemporary",
+          "practical"
+        ]
+      },
+      {
+        "id": "cushings_handbook",
+        "title": "Cushing's Handbook",
+        "author_ids": [
+          "cushing_val"
+        ],
+        "subject": [
+          "glaze recipes",
+          "glaze chemistry",
+          "studio reference"
+        ],
+        "community_status": "treasured/cult",
+        "formally_published": false,
+        "notes": "Not commercially published; circulated through Alfred University orbit. Treasured almost as artifact. Having a copy feels like connection to a lineage.",
+        "tags": [
+          "cult",
+          "beloved",
+          "Alfred University",
+          "recipes"
+        ]
+      },
+      {
+        "id": "elements_ceramics_norton",
+        "title": "Elements of Ceramics",
+        "author_ids": [
+          "norton_fh"
+        ],
+        "subject": [
+          "ceramic engineering",
+          "ceramic science"
+        ],
+        "community_status": "respected/academic",
+        "tags": [
+          "technical",
+          "academic",
+          "industrial"
+        ]
+      },
+      {
+        "id": "fine_ceramics_norton",
+        "title": "Fine Ceramics",
+        "author_ids": [
+          "norton_fh"
+        ],
+        "subject": [
+          "ceramic engineering",
+          "ceramic science"
+        ],
+        "community_status": "respected/academic",
+        "tags": [
+          "technical",
+          "academic",
+          "industrial"
+        ]
+      },
+      {
+        "id": "potters_craft_binns",
+        "title": "The Potter's Craft",
+        "author_ids": [
+          "binns_charles"
+        ],
+        "year": 1910,
+        "notes": "One of the first American texts treating pottery making as both craft and science. Includes glaze chemistry fundamentals from a working potter's perspective. Written by the founder of Alfred University's ceramics program.",
+        "tags": [
+          "historical",
+          "foundational",
+          "education"
+        ]
+      },
+      {
+        "id": "grand_feu_ceramics_doat",
+        "title": "Grand Feu Ceramics",
+        "author_ids": [
+          "doat_taxile"
+        ],
+        "year": 1905,
+        "notes": "First serious treatment of high-fire glaze chemistry from a practitioner. Originally in French (Grand Feu Céramiques), translated to English by Samuel Robineau. Covers crystalline glazes, flambés, and high-fire effects with scientific rigor decades ahead of its time.",
+        "tags": [
+          "historical",
+          "foundational",
+          "crystalline",
+          "French"
+        ]
+      },
+      {
+        "id": "intro_ceramics_kingery",
+        "title": "Introduction to Ceramics",
+        "author_ids": [
+          "kingery_david"
+        ],
+        "year": 1960,
+        "notes": "THE ceramic material science textbook for 60+ years. Co-authored with H.K. Bowen and D.R. Uhlmann. Covers phase equilibria, thermal expansion, viscosity, and every physical property relevant to glaze chemistry. Dense, technical, irreplaceable. Revised as 'Introduction to Ceramics' 2nd ed. (1976).",
+        "tags": [
+          "academic",
+          "foundational",
+          "material science"
+        ]
+      },
+      {
+        "id": "understanding_glazes_green",
+        "title": "Understanding Pottery Glazes",
+        "author_ids": [
+          "green_david"
+        ],
+        "year": 1963,
+        "notes": "One of the clearest explanations of glaze chemistry for studio potters ever published. Bridges industrial ceramic science and studio practice without dumbing it down. British perspective.",
+        "tags": [
+          "studio",
+          "education",
+          "British"
+        ]
+      },
+      {
+        "id": "complete_clay_glazes_chappell",
+        "title": "The Potter's Complete Book of Clay and Glazes",
+        "author_ids": [
+          "chappell_james"
+        ],
+        "year": 1991,
+        "notes": "The single most comprehensive recipe reference in studio ceramics. Hundreds of recipes organized by type, cone, and atmosphere, with chemistry. A workhorse book — sits next to the kiln. Multiple revised editions including 2nd ed. (2004).",
+        "tags": [
+          "studio",
+          "reference",
+          "recipes"
+        ]
+      },
+      {
+        "id": "lustre_daly",
+        "title": "Lustre",
+        "author_ids": [
+          "daly_greg"
+        ],
+        "year": 2013,
+        "notes": "Definitive guide to luster glaze chemistry and technique. Covers metallic oxide reduction films, fuming, and iridescent surfaces. Nobody else covers this domain at this depth.",
+        "tags": [
+          "contemporary",
+          "luster",
+          "specialty"
+        ]
+      },
+      {
+        "id": "glazes_glazing_techniques_daly",
+        "title": "Glazes and Glazing Techniques",
+        "author_ids": [
+          "daly_greg"
+        ],
+        "year": 1995,
+        "notes": "Broad glaze chemistry reference with particular strength in color development and specialty effects from an Australian perspective.",
+        "tags": [
+          "contemporary",
+          "studio",
+          "color"
+        ]
+      },
+      {
+        "id": "crystalline_glazes_kline",
+        "title": "Crystalline Glazes: Understanding the Process and Materials",
+        "author_ids": [
+          "kline_gabriel"
+        ],
+        "year": 2018,
+        "notes": "The modern bible of crystalline glaze chemistry. Covers zinc silicate crystal nucleation and growth, firing schedules, cooling curves, and seeding techniques with real science. The book the crystalline community was waiting for.",
+        "tags": [
+          "contemporary",
+          "crystalline",
+          "specialty"
+        ]
+      },
+      {
+        "id": "ash_glazes_rogers",
+        "title": "Ash Glazes",
+        "author_ids": [
+          "rogers_phil"
+        ],
+        "year": 2003,
+        "notes": "Practical wood-ash chemistry focused on studio use. Different from Tichane's historical reconstruction approach — this is about making ash glazes work in a modern studio. Covers sourcing, washing, testing, and formulating.",
+        "tags": [
+          "studio",
+          "ash",
+          "wood-fire"
+        ]
+      },
+      {
+        "id": "mastering_raku_branfman",
+        "title": "Mastering Raku",
+        "author_ids": [
+          "branfman_steve"
+        ],
+        "year": 2001,
+        "notes": "Definitive guide to raku chemistry and technique — carbon trapping, metallic lusters, copper reduction, post-firing reduction chemistry. Multiple editions.",
+        "tags": [
+          "contemporary",
+          "raku",
+          "low-fire",
+          "reduction"
+        ]
+      },
+      {
+        "id": "soda_clay_fire_nichols",
+        "title": "Soda, Clay, and Fire",
+        "author_ids": [
+          "nichols_gail"
+        ],
+        "year": 2006,
+        "notes": "Definitive guide to soda firing chemistry. Covers sodium carbonate vapor deposition mechanisms, clay body interactions, surface chemistry differences from salt firing. The book that finally gave soda firing its own scientific identity separate from salt.",
+        "tags": [
+          "contemporary",
+          "soda firing",
+          "atmospheric"
+        ]
+      },
+      {
+        "id": "out_of_earth_obstler",
+        "title": "Out of the Earth, Into the Fire",
+        "author_ids": [
+          "obstler_mimi"
+        ],
+        "year": 2000,
+        "notes": "Ceramic materials science written for studio potters. Covers thermal behavior, mineralogy, phase changes, and kiln chemistry. Bridges the gap between dense academic texts (Kingery, Norton) and recipe books. Often the first recommendation for potters wanting to understand the 'why' behind glaze behavior.",
+        "tags": [
+          "contemporary",
+          "material science",
+          "education"
+        ]
+      },
+      {
+        "id": "self_reliant_potter_norsker",
+        "title": "Glazes for the Self-Reliant Potter",
+        "author_ids": [
+          "norsker_henrik"
+        ],
+        "year": 1990,
+        "notes": "Co-authored with James Danisch. How to develop glazes from local rocks, ash, and clay without commercial suppliers. Published for developing-world ceramics programs. A fundamentally different approach to glaze chemistry — geology-first, using what the land provides. Also relevant to any potter exploring local-materials practice.",
+        "tags": [
+          "development",
+          "local materials",
+          "geology"
+        ]
+      },
+      {
+        "id": "potters_workbook_illian",
+        "title": "A Potter's Workbook",
+        "author_ids": [
+          "illian_clary"
+        ],
+        "year": 1999,
+        "notes": "The most practical materials-based glaze thinking text in the Leach tradition. Third-generation knowledge (Leach → MacKenzie → Illian) distilled into a working guide. Teaches potters to think from materials outward rather than from recipes downward.",
+        "tags": [
+          "contemporary",
+          "studio",
+          "Leach tradition",
+          "materials"
+        ]
+      },
+      {
+        "id": "japanese_wood_fired_kusakabe",
+        "title": "Japanese Wood-Fired Ceramics",
+        "author_ids": [
+          "kusakabe_masakazu"
+        ],
+        "year": 2005,
+        "notes": "Co-authored with Marc Lancet. Scientific treatment of Japanese wood-firing traditions — anagama and noborigama kiln atmosphere chemistry, ash deposit mechanisms, wadding chemistry, firing schedules. Bridges Japanese empirical kiln knowledge and Western analytical frameworks.",
+        "tags": [
+          "contemporary",
+          "wood-fire",
+          "Japanese",
+          "kiln science"
+        ]
+      }
+    ],
+    "institutions": [
+      {
+        "id": "alfred_university",
+        "name": "Alfred University",
+        "location": "Alfred, New York, USA",
+        "significance": "Major center for ceramic arts and engineering education; home to Cushing and Katz",
+        "associated_people": [
+          "cushing_val",
+          "katz_matt",
+          "grotell_maija"
+        ]
+      },
+      {
+        "id": "mit_ceramics",
+        "name": "MIT Ceramic Engineering",
+        "location": "Cambridge, Massachusetts, USA",
+        "associated_people": [
+          "norton_fh"
+        ]
+      },
+      {
+        "id": "digitalfire",
+        "name": "Digitalfire",
+        "type": "online resource / software",
+        "url": "https://digitalfire.com",
+        "significance": "Largest accessible glaze chemistry database and educational resource; Insight software; paradigm shift in computational glaze formulation",
+        "associated_people": [
+          "hansen_tony",
+          "desjardins_robert"
+        ]
+      },
+      {
+        "id": "utah_state_university",
+        "name": "Utah State University",
+        "location": "Logan, Utah, USA",
+        "associated_people": [
+          "neely_john"
+        ]
+      },
+      {
+        "id": "university_of_minnesota",
+        "name": "University of Minnesota",
+        "location": "Minneapolis, Minnesota, USA",
+        "associated_people": [
+          "mackenzie_warren"
+        ]
+      }
+    ],
+    "concepts": [
+      {
+        "id": "umf",
+        "name": "Unity Molecular Formula (UMF)",
+        "developed_by": [
+          "seger_hermann"
+        ],
+        "description": "Framework organizing glaze materials into flux, stabilizer (alumina), and glass former (silica) categories for rational glaze calculation",
+        "tags": [
+          "foundational",
+          "calculation"
+        ]
+      },
+      {
+        "id": "currie_grids",
+        "name": "Currie Grid Blend Method",
+        "developed_by": [
+          "currie_ian"
+        ],
+        "description": "Systematic grid-based approach to glaze testing that maps silica and alumina variations across a matrix of test tiles",
+        "tags": [
+          "testing",
+          "systematic"
+        ]
+      },
+      {
+        "id": "limit_formulas",
+        "name": "Limit Formulas",
+        "developed_by": [
+          "hansen_tony"
+        ],
+        "description": "UMF-based ranges defining safe, functional, and aesthetically predictable glaze formulas for given firing temperatures",
+        "tags": [
+          "calculation",
+          "functional ware",
+          "safety"
+        ]
+      },
+      {
+        "id": "stull_charts",
+        "name": "Stull Charts",
+        "developed_by": [
+          "stull_ray"
+        ],
+        "description": "Binary phase diagrams plotting silica against alumina (in UMF) to map glaze behavior — glossy, matte, dry, underfired — across compositional space. A foundational visualization tool for predicting glaze surface from oxide ratios, widely used alongside Currie Grids and limit formulas.",
+        "tags": [
+          "foundational",
+          "calculation",
+          "visualization"
+        ]
+      },
+      {
+        "id": "phase_diagrams",
+        "name": "Phase Diagrams & Eutectics",
+        "type": "concept",
+        "developed_by": [
+          "seger_hermann",
+          "kingery_david",
+          "parmelee_cw"
+        ],
+        "notes": "Phase diagrams map which mineral phases are stable at given temperature and composition. Eutectics are compositions where two or more materials melt together at a temperature lower than either would alone — the fundamental reason glazes melt where they do. The SiO₂-Al₂O₃ binary phase diagram underpins the Stull chart. Understanding eutectics explains why a glaze melts at cone 6 when none of its individual ingredients would.",
+        "tags": [
+          "foundational",
+          "material science",
+          "melting behavior"
+        ],
+        "related_people": [
+          "kingery_david",
+          "parmelee_cw",
+          "norton_fh",
+          "stull_ray"
+        ]
+      },
+      {
+        "id": "thermal_expansion_glaze_fit",
+        "name": "Thermal Expansion & Glaze Fit",
+        "type": "concept",
+        "developed_by": [
+          "kingery_david",
+          "parmelee_cw",
+          "hesselberth_john"
+        ],
+        "notes": "When a glaze and clay body cool from kiln temperature, they contract at different rates determined by their coefficient of thermal expansion (CTE). If the glaze contracts more than the body, it goes into tension → crazing (fine cracks). If it contracts less, it goes into compression → shivering (glaze flaking). Perfect 'glaze fit' means the glaze is in slight compression. This is the #1 practical problem in studio ceramics and the reason potters adjust silica, alumina, and flux ratios. Calculated from oxide contributions using Appen factors or measured with a dilatometer.",
+        "tags": [
+          "foundational",
+          "practical",
+          "glaze fit",
+          "crazing"
+        ],
+        "related_people": [
+          "kingery_david",
+          "finkelnburg_dave",
+          "hesselberth_john",
+          "hansen_tony"
+        ]
+      },
+      {
+        "id": "crystalline_glaze_theory",
+        "name": "Crystalline Glaze Theory",
+        "type": "concept",
+        "developed_by": [
+          "doat_taxile",
+          "robineau_adelaide"
+        ],
+        "notes": "Crystalline glazes produce visible crystals (typically zinc silicate — willemite, Zn₂SiO₄) that grow during controlled cooling. The chemistry requires: high zinc oxide (25-30% of flux), high silica, very low alumina (alumina inhibits crystal growth), and a specific cooling schedule — rapid cooling to nucleation temperature (~1050°C), then a long hold (2-8 hours) while crystals grow, then final cooling. Nucleation sites can be seeded. The result is predictable in chemistry but chaotic in pattern — every firing is unique. First achieved systematically by Taxile Doat at Sèvres, then by Robineau in America.",
+        "tags": [
+          "specialty",
+          "crystalline",
+          "zinc silicate",
+          "cooling schedule"
+        ],
+        "related_people": [
+          "doat_taxile",
+          "robineau_adelaide",
+          "kline_gabriel",
+          "pinnell_pete"
+        ]
+      }
+    ],
+    "metadata": {
+      "created": "2025-02-20",
+      "source": "Compiled from conversation covering canonical glaze chemistry figures, popular books, and community-treasured texts",
+      "total_people": 35,
+      "total_books": 30,
+      "tags_used": [
+        "foundational",
+        "beloved",
+        "cult",
+        "studio",
+        "contemporary",
+        "historical",
+        "technical",
+        "industrial",
+        "academic",
+        "scholarly",
+        "recipes",
+        "popular",
+        "systematic",
+        "testing",
+        "colorants",
+        "reduction",
+        "oxidation",
+        "wood fire",
+        "ash glazes",
+        "salt glaze",
+        "atmospheric",
+        "raku",
+        "Japanese",
+        "Chinese",
+        "historical reconstruction",
+        "out of print",
+        "digital",
+        "software",
+        "analytical",
+        "science",
+        "introductory",
+        "functional",
+        "cone 6",
+        "Alfred University",
+        "UMF",
+        "calculation"
+      ],
+      "notes": "Kyle Crowder listed in source material but flagged as unverifiable — excluded from this dataset pending verification"
+    }
+  }
+}
