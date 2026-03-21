@@ -23,18 +23,24 @@ CSS = """
   --mono: 'SF Mono','Cascadia Code','JetBrains Mono','Fira Code',monospace;
   --sans: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 }
+[data-theme="light"] {
+  --bg: #f8f8fc; --bg-card: #ffffff; --bg-hover: #f0f0f8;
+  --border: #d8d8e8; --text: #3a3a5a; --text-dim: #7a7a9a; --text-bright: #1a1a2e;
+  --accent: #4f46e5; --accent-dim: #3730a3;
+  --rose: #e11d48; --teal: #0d9488; --amber: #d97706; --emerald: #059669;
+}
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { background: var(--bg); color: var(--text); font-family: var(--sans); }
 body { min-height: 100vh; display: flex; flex-direction: column; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-.banner {
-  background: linear-gradient(135deg, #1a3a2a, #0d2818);
-  color: var(--text-bright); font-family: var(--mono); font-size: 0.72rem;
-  padding: 0.35rem 1rem; text-align: center; border-bottom: 1px solid var(--emerald);
+.theme-toggle {
+  background: none; border: 1px solid var(--border); color: var(--text-dim);
+  border-radius: 6px; padding: 0.25rem 0.5rem; cursor: pointer; font-size: 0.9rem;
+  font-family: var(--mono); line-height: 1; transition: border-color 0.15s, color 0.15s;
 }
-.banner a { color: var(--amber); }
+.theme-toggle:hover { border-color: var(--emerald); color: var(--text-bright); }
 
 .site-header {
   display: flex; align-items: center; gap: 1rem; padding: 1rem 2rem;
@@ -169,15 +175,29 @@ def wrap_page(title, body_html, active=""):
 <script>window.plausible=window.plausible||function(){{(plausible.q=plausible.q||[]).push(arguments)}},plausible.init=plausible.init||function(i){{plausible.o=i||{{}}}};plausible.init()</script>
 </head>
 <body>
-<div class="banner">Glaze Chemist - A free reference from <a href="https://stullatlas.app">Stull Atlas</a></div>
 <div class="site-header">
   <a href="{BASE}/index.html" class="logo"><span class="sigil">&#9671;</span> Glaze Chemist</a>
   <nav>{nav_html(active)}</nav>
+  <button class="theme-toggle" aria-label="Toggle theme">\u2600</button>
 </div>
 {body_html}
 <div class="site-footer">
   Glaze Chemist - A free glaze chemistry reference - <a href="https://stullatlas.app">stullatlas.app</a> - <a href="https://stullatlas.app/community/">Community Atlas</a>
 </div>
+<script>
+(function(){{
+  var b=document.querySelector('.theme-toggle'),r=document.documentElement;
+  var t=localStorage.getItem('gc-theme')||'dark';
+  if(t==='light')r.setAttribute('data-theme','light');
+  function u(){{b.textContent=r.getAttribute('data-theme')==='light'?'\u263e':'\u2600';}}
+  u();
+  b.addEventListener('click',function(){{
+    var n=r.getAttribute('data-theme')==='light'?'dark':'light';
+    if(n==='light')r.setAttribute('data-theme','light');else r.removeAttribute('data-theme');
+    localStorage.setItem('gc-theme',n);u();
+  }});
+}})()
+</script>
 </body>
 </html>"""
 
