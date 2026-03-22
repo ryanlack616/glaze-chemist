@@ -1706,7 +1706,11 @@
           "foundational"
         ],
         "isbn": "9780821601341",
-        "knowledge_search": "glaze viscosity thermal expansion"
+        "knowledge_search": "glaze viscosity thermal expansion",
+        "knowledge_indexed": {
+          "source": "ia-ceramic-glazes",
+          "pages": 81
+        }
       },
       {
         "id": "ash_glazes_tichane",
