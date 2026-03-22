@@ -143,6 +143,48 @@ a:hover { text-decoration: underline; }
   font-family: var(--mono); font-size: 0.6rem; color: var(--emerald);
   opacity: 0.7; margin-top: 0.15rem;
 }
+
+/* Book covers */
+.book-card-inner { display: flex; gap: 0.8rem; }
+.book-card-cover {
+  flex-shrink: 0; width: 56px; height: 80px; border-radius: 4px;
+  object-fit: cover; background: var(--bg-hover); border: 1px solid var(--border);
+}
+.book-card-cover-ph {
+  flex-shrink: 0; width: 56px; height: 80px; border-radius: 4px;
+  background: var(--bg-hover); border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem; color: var(--text-dim); opacity: 0.5;
+}
+.book-card-text { flex: 1; min-width: 0; }
+
+.detail-cover {
+  width: 180px; border-radius: 6px; border: 1px solid var(--border);
+  background: var(--bg-hover); margin-bottom: 1rem;
+}
+.detail-cover-ph {
+  width: 180px; height: 260px; border-radius: 6px; border: 1px solid var(--border);
+  background: var(--bg-hover); display: flex; align-items: center; justify-content: center;
+  font-size: 3rem; color: var(--text-dim); opacity: 0.4; margin-bottom: 1rem;
+}
+
+/* Knowledge badges */
+.knowledge-badge {
+  display: inline-flex; align-items: center; gap: 0.3rem;
+  font-family: var(--mono); font-size: 0.6rem; padding: 0.15rem 0.45rem;
+  border-radius: 4px; background: rgba(52,211,153,0.15); color: var(--emerald);
+  border: 1px solid rgba(52,211,153,0.25); margin-top: 0.3rem;
+}
+.knowledge-section {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+  padding: 0.8rem 1rem; margin-top: 0.8rem;
+}
+.knowledge-section a {
+  font-family: var(--mono); font-size: 0.78rem; color: var(--emerald);
+}
+.knowledge-pages {
+  font-family: var(--mono); font-size: 0.72rem; color: var(--text-dim); margin-top: 0.3rem;
+}
 """
 
 def e(text):
@@ -387,13 +429,30 @@ def build_books(data, all_people):
         notes = e(b.get("notes", ""))[:160]
         oop = " - out of print" if b.get("out_of_print") else ""
         year = f' ({b["first_published"]})' if b.get("first_published") else ""
+        isbn = b.get("isbn", "")
+        ki = b.get("knowledge_indexed")
+
+        if isbn:
+            cover_html = f'<img class="book-card-cover" src="https://covers.openlibrary.org/b/isbn/{isbn}-M.jpg" alt="" loading="lazy" onerror="this.outerHTML=\'<div class=\\\'book-card-cover-ph\\\'>📖</div>\'">'
+        else:
+            cover_html = '<div class="book-card-cover-ph">📖</div>'
+
+        ki_html = ""
+        if ki:
+            ki_html = f'\n    <div class="knowledge-badge">⚡ {ki["pages"]} pages indexed</div>'
+
         cards.append(f'''<div class="card">
   <a href="{slug}.html">
-    <div class="card-name">{e(b["title"])}</div>
-    <span class="card-type type-book">book</span>
-    <div class="card-meta">{e(authors)}{year}{oop}</div>
-    <div class="card-notes">{notes}</div>
-    {tags_html(b.get("tags", []))}
+    <div class="book-card-inner">
+      {cover_html}
+      <div class="book-card-text">
+        <div class="card-name">{e(b["title"])}</div>
+        <span class="card-type type-book">book</span>
+        <div class="card-meta">{e(authors)}{year}{oop}</div>
+        <div class="card-notes">{notes}</div>
+        {tags_html(b.get("tags", []))}{ki_html}
+      </div>
+    </div>
   </a>
 </div>''')
 
@@ -428,6 +487,9 @@ document.getElementById("filterInput").addEventListener("input", function() {{
         tags = b.get("tags", [])
         oop = b.get("out_of_print", False)
         year = b.get("first_published", "")
+        isbn = b.get("isbn", "")
+        ki = b.get("knowledge_indexed")
+        ks = b.get("knowledge_search", "")
 
         author_links = ", ".join(f'<a href="{BASE}/people/{aslug}.html">{e(name)}</a>' for name, aslug in authors)
 
@@ -442,6 +504,33 @@ document.getElementById("filterInput").addEventListener("input", function() {{
             subjects_html = f'''<div class="section">
   <div class="section-title">Subjects</div>
   <ul style="list-style:disc;padding-left:1.2rem;font-size:0.85rem;color:var(--text);line-height:1.8">{items}</ul>
+</div>'''
+
+        # Cover image for sidebar
+        if isbn:
+            cover_detail = f'<img class="detail-cover" src="https://covers.openlibrary.org/b/isbn/{isbn}-L.jpg" alt="{e(b["title"])}" loading="lazy" onerror="this.outerHTML=\'<div class=\\\'detail-cover-ph\\\'>📖</div>\'">'
+        else:
+            cover_detail = '<div class="detail-cover-ph">📖</div>'
+
+        # Knowledge section
+        knowledge_html = ""
+        if ki:
+            search_q = ki.get("source", b["title"])
+            knowledge_html = f'''<div class="section">
+  <div class="section-title">Ceramic Knowledge</div>
+  <div class="knowledge-section">
+    <div class="knowledge-badge" style="font-size:0.72rem">⚡ Full text indexed — {ki["pages"]} pages</div>
+    <div class="knowledge-pages">OCR-indexed in the Ceramic Engine knowledge base</div>
+    <div style="margin-top:0.5rem"><a href="https://engine.stullatlas.app/knowledge/search?q={e(search_q)}" target="_blank">→ Search this text</a></div>
+  </div>
+</div>'''
+        elif ks:
+            knowledge_html = f'''<div class="section">
+  <div class="section-title">Ceramic Knowledge</div>
+  <div class="knowledge-section">
+    <div style="font-family:var(--mono);font-size:0.72rem;color:var(--text-dim)">Related content in the knowledge base</div>
+    <div style="margin-top:0.5rem"><a href="https://engine.stullatlas.app/knowledge/search?q={e(ks)}" target="_blank">→ Search related topics</a></div>
+  </div>
 </div>'''
 
         body = f'''
@@ -460,6 +549,8 @@ document.getElementById("filterInput").addEventListener("input", function() {{
       {subjects_html}
     </div>
     <div class="detail-sidebar">
+      {cover_detail}
+      {knowledge_html}
       {"" if not tags else f'<div class="section"><div class="section-title">Tags</div>{tags_html(tags)}</div>'}
     </div>
   </div>

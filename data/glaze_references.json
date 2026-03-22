@@ -1482,7 +1482,13 @@
           "foundational",
           "beloved",
           "studio"
-        ]
+        ],
+        "isbn": "9780801966330",
+        "knowledge_indexed": {
+          "slug_prefix": "ia-clay-and-glazes-for-the-potter",
+          "pages": 237,
+          "label": "Full text indexed (237 pages OCR'd from public domain edition)"
+        }
       },
       {
         "id": "potters_book_leach",
@@ -1503,7 +1509,8 @@
           "beloved",
           "devotional",
           "ash glazes"
-        ]
+        ],
+        "isbn": "9780571109920"
       },
       {
         "id": "potters_dictionary_hamer",
@@ -1525,7 +1532,9 @@
           "foundational",
           "beloved",
           "encyclopedic"
-        ]
+        ],
+        "isbn": "9780812238105",
+        "knowledge_search": "ceramic materials dictionary"
       },
       {
         "id": "high_fire_glazes_britt",
@@ -1545,7 +1554,9 @@
           "recipes",
           "popular",
           "beloved"
-        ]
+        ],
+        "isbn": "9781600592164",
+        "knowledge_search": "high fire glaze recipes"
       },
       {
         "id": "mid_range_glazes_britt",
@@ -1564,7 +1575,8 @@
           "recipes",
           "popular",
           "cone 6"
-        ]
+        ],
+        "isbn": "9781454707769"
       },
       {
         "id": "ceramic_spectrum_hopper",
@@ -1583,7 +1595,9 @@
           "colorants",
           "beloved",
           "systematic"
-        ]
+        ],
+        "isbn": "9780801979866",
+        "knowledge_search": "colorant oxide periodic table"
       },
       {
         "id": "stoneware_glazes_currie",
@@ -1603,7 +1617,9 @@
           "beloved",
           "testing",
           "cult"
-        ]
+        ],
+        "isbn": "9780646128658",
+        "knowledge_search": "stoneware glaze testing systematic"
       },
       {
         "id": "mastering_cone6_hansen",
@@ -1624,7 +1640,9 @@
           "cone 6",
           "functional",
           "beloved"
-        ]
+        ],
+        "isbn": "9780966636826",
+        "knowledge_search": "cone 6 limit formula"
       },
       {
         "id": "science_for_potters_bloomfield",
@@ -1642,7 +1660,8 @@
           "contemporary",
           "introductory",
           "science"
-        ]
+        ],
+        "isbn": "9781574983609"
       },
       {
         "id": "colour_in_glazes_bloomfield",
@@ -1659,7 +1678,9 @@
         "tags": [
           "contemporary",
           "colorants"
-        ]
+        ],
+        "isbn": "9781912217847",
+        "knowledge_search": "colorant oxide glaze"
       },
       {
         "id": "ceramic_glazes_parmelee",
@@ -1683,7 +1704,9 @@
           "cult",
           "out of print",
           "foundational"
-        ]
+        ],
+        "isbn": "9780821601341",
+        "knowledge_search": "glaze viscosity thermal expansion"
       },
       {
         "id": "ash_glazes_tichane",
@@ -1703,7 +1726,9 @@
           "ash glazes",
           "out of print",
           "beloved"
-        ]
+        ],
+        "isbn": "9780961492809",
+        "knowledge_search": "ash glaze chemistry"
       },
       {
         "id": "celadon_blues_tichane",
@@ -1723,7 +1748,8 @@
           "celadon",
           "out of print",
           "historical reconstruction"
-        ]
+        ],
+        "isbn": "9780961492816"
       },
       {
         "id": "reds_reds_reds_tichane",
@@ -1744,7 +1770,8 @@
           "reduction",
           "out of print",
           "historical reconstruction"
-        ]
+        ],
+        "isbn": "9780961492823"
       },
       {
         "id": "ohata_kaki_tichane",
@@ -1762,7 +1789,8 @@
           "cult",
           "Japanese",
           "out of print"
-        ]
+        ],
+        "isbn": "9780961492830"
       },
       {
         "id": "chinese_glazes_wood",
@@ -1782,7 +1810,9 @@
           "historical reconstruction",
           "Chinese",
           "beloved"
-        ]
+        ],
+        "isbn": "9780812235289",
+        "knowledge_search": "Chinese glaze celadon"
       },
       {
         "id": "electric_kiln_ceramics_zakin",
@@ -1801,7 +1831,8 @@
           "oxidation",
           "electric kiln",
           "studio"
-        ]
+        ],
+        "isbn": "9780873419765"
       },
       {
         "id": "ceramics_mastering_craft_zakin",
@@ -1818,7 +1849,8 @@
         "tags": [
           "studio",
           "general"
-        ]
+        ],
+        "isbn": "9780801979910"
       },
       {
         "id": "ceramic_science_potter_lawrence",
@@ -1838,7 +1870,9 @@
           "technical",
           "science",
           "foundational"
-        ]
+        ],
+        "isbn": "9780801966323",
+        "knowledge_search": "silica alumina eutectic"
       },
       {
         "id": "pioneer_pottery_cardew",
@@ -1855,7 +1889,8 @@
         "tags": [
           "studio",
           "historical"
-        ]
+        ],
+        "isbn": "9780852639108"
       },
       {
         "id": "world_japanese_ceramics_sanders",
@@ -1871,7 +1906,8 @@
         "tags": [
           "Japanese",
           "historical"
-        ]
+        ],
+        "isbn": "9780870112799"
       },
       {
         "id": "glazes_special_effects_sanders",
@@ -1887,7 +1923,8 @@
         "tags": [
           "specialty",
           "studio"
-        ]
+        ],
+        "isbn": "9780823019281"
       },
       {
         "id": "potters_book_glaze_recipes_cooper",
@@ -1904,7 +1941,8 @@
           "recipes",
           "studio",
           "popular"
-        ]
+        ],
+        "isbn": "9780812217827"
       },
       {
         "id": "electric_kiln_pottery_cooper",
@@ -1920,7 +1958,8 @@
         "tags": [
           "oxidation",
           "electric kiln"
-        ]
+        ],
+        "isbn": "9780812239645"
       },
       {
         "id": "wood_fired_stoneware_troy",
@@ -1941,7 +1980,9 @@
           "wood fire",
           "atmospheric",
           "reduction"
-        ]
+        ],
+        "isbn": "9780801985577",
+        "knowledge_search": "wood fire ash deposit"
       },
       {
         "id": "complete_potters_companion_birks",
@@ -1959,7 +2000,8 @@
         "tags": [
           "introductory",
           "popular"
-        ]
+        ],
+        "isbn": "9780821220757"
       },
       {
         "id": "potters_studio_handbook_zamek",
@@ -1977,7 +2019,8 @@
           "studio",
           "contemporary",
           "practical"
-        ]
+        ],
+        "isbn": "9780760338674"
       },
       {
         "id": "cushings_handbook",
@@ -2015,7 +2058,9 @@
           "technical",
           "academic",
           "industrial"
-        ]
+        ],
+        "isbn": "9780201057799",
+        "knowledge_search": "ceramic engineering elements"
       },
       {
         "id": "fine_ceramics_norton",
@@ -2032,7 +2077,8 @@
           "technical",
           "academic",
           "industrial"
-        ]
+        ],
+        "isbn": "9780898749991"
       },
       {
         "id": "potters_craft_binns",
@@ -2046,7 +2092,8 @@
           "historical",
           "foundational",
           "education"
-        ]
+        ],
+        "isbn": "9780442007287"
       },
       {
         "id": "grand_feu_ceramics_doat",
@@ -2075,7 +2122,9 @@
           "academic",
           "foundational",
           "material science"
-        ]
+        ],
+        "isbn": "9780471478607",
+        "knowledge_search": "phase equilibria ceramic materials"
       },
       {
         "id": "understanding_glazes_green",
@@ -2089,7 +2138,8 @@
           "studio",
           "education",
           "British"
-        ]
+        ],
+        "isbn": "9780571107711"
       },
       {
         "id": "complete_clay_glazes_chappell",
@@ -2103,7 +2153,8 @@
           "studio",
           "reference",
           "recipes"
-        ]
+        ],
+        "isbn": "9780823009572"
       },
       {
         "id": "lustre_daly",
@@ -2117,7 +2168,8 @@
           "contemporary",
           "luster",
           "specialty"
-        ]
+        ],
+        "isbn": "9781574983081"
       },
       {
         "id": "glazes_glazing_techniques_daly",
@@ -2131,7 +2183,8 @@
           "contemporary",
           "studio",
           "color"
-        ]
+        ],
+        "isbn": "9780713645590"
       },
       {
         "id": "crystalline_glazes_kline",
@@ -2145,7 +2198,9 @@
           "contemporary",
           "crystalline",
           "specialty"
-        ]
+        ],
+        "isbn": "9781574983487",
+        "knowledge_search": "crystalline zinc glaze"
       },
       {
         "id": "ash_glazes_rogers",
@@ -2159,7 +2214,9 @@
           "studio",
           "ash",
           "wood-fire"
-        ]
+        ],
+        "isbn": "9780812234428",
+        "knowledge_search": "ash glaze wood fire"
       },
       {
         "id": "mastering_raku_branfman",
@@ -2174,7 +2231,9 @@
           "raku",
           "low-fire",
           "reduction"
-        ]
+        ],
+        "isbn": "9781454708124",
+        "knowledge_search": "raku reduction copper"
       },
       {
         "id": "soda_clay_fire_nichols",
@@ -2188,7 +2247,9 @@
           "contemporary",
           "soda firing",
           "atmospheric"
-        ]
+        ],
+        "isbn": "9781574982442",
+        "knowledge_search": "soda firing vapor"
       },
       {
         "id": "out_of_earth_obstler",
@@ -2202,7 +2263,8 @@
           "contemporary",
           "material science",
           "education"
-        ]
+        ],
+        "isbn": "9780874220827"
       },
       {
         "id": "self_reliant_potter_norsker",
@@ -2216,7 +2278,9 @@
           "development",
           "local materials",
           "geology"
-        ]
+        ],
+        "isbn": "9783528020590",
+        "knowledge_search": "local materials glaze geology"
       },
       {
         "id": "potters_workbook_illian",
@@ -2231,7 +2295,8 @@
           "studio",
           "Leach tradition",
           "materials"
-        ]
+        ],
+        "isbn": "9780877459477"
       },
       {
         "id": "japanese_wood_fired_kusakabe",
@@ -2246,7 +2311,8 @@
           "wood-fire",
           "Japanese",
           "kiln science"
-        ]
+        ],
+        "isbn": "9780812237696"
       }
     ],
     "institutions": [
