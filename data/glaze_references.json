@@ -848,18 +848,20 @@
           "researcher"
         ],
         "known_for": [
-          "Stull Charts — binary phase diagrams mapping silica-alumina ratios to predict glaze surface quality",
-          "Systematic glaze classification by oxide ratios",
-          "Early scientific approach to glaze formulation"
+          "Stull Chart — SiO₂ vs. Al₂O₃ map predicting glaze surface quality (1912)",
+          "Systematic classification of glaze regions (matte, semi-matte, bright gloss, underfired, crazed)",
+          "Deformation temperature mapping by firing cone (1914 with Howat)",
+          "Establishing UMF-based glaze navigation still standard 110+ years later"
         ],
         "institution": "University of Illinois",
-        "collaborators": [],
-        "notes": "Published landmark work on plotting glaze compositions on silica-alumina diagrams. His charts remain a standard visual tool for understanding how alumina and silica ratios affect glaze melt, surface, and matteness. Predates and complements Currie's grid approach.",
+        "collaborators": ["W.L. Howat"],
+        "notes": "Published two landmark papers in the Transactions of the American Ceramic Society: Vol. XIV (1912) introducing the Stull Chart at cone 11, and Vol. XVI (1914) with W.L. Howat extending the work to cone 9. Both papers are public domain and indexed on Archive.org. His 1912 chart remains the foundational coordinate system for glaze formulation — the basis for Stull Atlas.",
         "tags": [
           "foundational",
           "historical",
           "calculation",
-          "academic"
+          "academic",
+          "open access"
         ]
       },
       {
@@ -1466,6 +1468,68 @@
       }
     ],
     "books": [
+      {
+        "id": "stull_1912_silica_alumina",
+        "title": "Influences of Variable Silica and Alumina on Porcelain Glazes of Constant RO",
+        "author_ids": [
+          "stull_ray"
+        ],
+        "year": 1912,
+        "type": "journal paper",
+        "venue": "Transactions of the American Ceramic Society",
+        "volume": "XIV",
+        "pages": "62–70",
+        "source_url": "https://archive.org/details/transactio14amer/page/62/mode/1up",
+        "subject": [
+          "glaze surface quality",
+          "silica-alumina ratio",
+          "UMF",
+          "glaze classification",
+          "matte vs. gloss"
+        ],
+        "community_status": "foundational",
+        "notes": "THE landmark paper. Stull systematically fired hundreds of glaze compositions at cone 11, holding the RO (flux) column constant while varying SiO₂ and Al₂O₃. The resulting chart — glaze surface quality mapped against SiO₂ vs. Al₂O₃ — became the Stull Chart. Defined the navigable regions (matte, semi-matte, bright gloss, underfired, crazed) still used today. Public domain — scanned and indexed on Archive.org.",
+        "tags": [
+          "foundational",
+          "historical",
+          "1912",
+          "Stull Chart",
+          "UMF",
+          "open access"
+        ]
+      },
+      {
+        "id": "stull_howat_1914_deformation",
+        "title": "Deformation Temperatures of Some Porcelain Glazes",
+        "author_ids": [
+          "stull_ray"
+        ],
+        "year": 1914,
+        "type": "journal paper",
+        "venue": "Transactions of the American Ceramic Society",
+        "volume": "XVI",
+        "pages": "454",
+        "collaborators": ["W.L. Howat"],
+        "source_url": "https://archive.org/details/transactio16amer/page/454/mode/1up",
+        "subject": [
+          "deformation temperature",
+          "cone 9",
+          "silica-alumina ratio",
+          "glaze surface",
+          "firing temperature dependence"
+        ],
+        "community_status": "significant",
+        "notes": "Stull and Howat extend the 1912 work to cone 9, mapping deformation temperatures across the SiO₂–Al₂O₃ field. Identifies three key lines on the chart: AB (best gloss), CD (minimum deformation vs. silica), EF (minimum deformation vs. alumina). Proves that optimal glaze regions shift with firing temperature — the zones on the Stull chart are not fixed but temperature-dependent. Public domain — scanned on Archive.org.",
+        "tags": [
+          "foundational",
+          "historical",
+          "1914",
+          "Stull Chart",
+          "deformation",
+          "cone 9",
+          "open access"
+        ]
+      },
       {
         "id": "clay_glazes_rhodes",
         "title": "Clay and Glazes for the Potter",
