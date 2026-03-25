@@ -1465,9 +1465,114 @@
         "collaborators": [
           "Marc Lancet"
         ]
+      },
+      {
+        "id": "singer_felix",
+        "name": "Felix Singer",
+        "era": "20th Century",
+        "nationality": "German-British",
+        "role": [
+          "ceramic engineer",
+          "author"
+        ],
+        "known_for": [
+          "Industrial Ceramics (with W.L. Singer, 1963)",
+          "ceramic materials science at engineering depth",
+          "comprehensive treatment of ceramic processing, glazes, and firing"
+        ],
+        "notes": "Co-authored with his son W.L. Singer. The most comprehensive engineering-level treatment of ceramics published in English in the 20th century — 1,340 pages covering raw materials, glaze chemistry, kiln design, firing, and testing. The reference engineers reach for when other books don't go deep enough.",
+        "tags": [
+          "foundational",
+          "historical",
+          "engineering",
+          "academic"
+        ]
+      },
+      {
+        "id": "carty_william",
+        "name": "William M. Carty",
+        "era": "Contemporary",
+        "nationality": "American",
+        "role": [
+          "ceramic engineer",
+          "researcher",
+          "educator"
+        ],
+        "institution": "Alfred University",
+        "known_for": [
+          "Validation of optimal Stull chart zone using modern analytical methods (2012, with Quinlan)",
+          "Glaze‐body interface research",
+          "Ceramic suspension rheology"
+        ],
+        "notes": "Alfred University ceramic engineering professor whose 2012 work with Frederica Quinlan applied modern analytical methods to validate the optimal glaze chemistry zone first identified by Stull in 1912. Their findings — confirming the matte/gloss boundary and durable zone positions on the SiO₂–Al₂O₃ chart — are cited in Katz's 2026 durability study as prior confirmation of the 0.3 R²O:0.7 RO zone.",
+        "tags": [
+          "contemporary",
+          "analytical",
+          "Alfred University",
+          "Stull Chart"
+        ],
+        "collaborators": [
+          "Frederica Quinlan",
+          "Matt Katz"
+        ]
       }
     ],
     "books": [
+      {
+        "id": "industrial_ceramics_singer",
+        "title": "Industrial Ceramics",
+        "author_ids": [
+          "singer_felix"
+        ],
+        "year": 1963,
+        "type": "book",
+        "collaborators": ["W.L. Singer"],
+        "subject": [
+          "ceramic engineering",
+          "raw materials",
+          "glaze chemistry",
+          "kiln design",
+          "firing",
+          "ceramic testing"
+        ],
+        "community_status": "significant",
+        "notes": "Co-authored with W.L. Singer. The most comprehensive engineering-level ceramics text published in English in the 20th century — 1,340 pages. Covers raw materials, glaze chemistry, kiln design, firing curves, and physical testing with a depth that no studio-oriented book approaches. Engineers and technical ceramicists reach for Singer & Singer when everything else is insufficient. Foundational reference for ceramic science programs worldwide.",
+        "tags": [
+          "foundational",
+          "historical",
+          "engineering",
+          "academic",
+          "comprehensive"
+        ],
+        "isbn": "9780412152009"
+      },
+      {
+        "id": "carty_quinlan_2012_glaze_properties",
+        "title": "Glaze Melt Chemistry and the Stull Chart: Validating the Optimal Zone",
+        "author_ids": [
+          "carty_william"
+        ],
+        "year": 2012,
+        "type": "academic paper",
+        "collaborators": ["Frederica Quinlan"],
+        "venue": "Alfred University Ceramic Engineering Research",
+        "subject": [
+          "Stull Chart",
+          "melt chemistry",
+          "SiO2-Al2O3 field",
+          "glaze zone validation",
+          "durability"
+        ],
+        "community_status": "significant",
+        "notes": "Carty and Quinlan applied modern analytical methods to re-examine the SiO₂–Al₂O₃ field first mapped by Stull (1912), confirming and refining the positions of key zone boundaries. Their work established the analytical basis for the 'optimal zone' (roughly 0.3 R²O:0.7 RO, 7:1 SiO₂:Al₂O₃) that Katz's 2026 dishwasher durability study independently confirmed. Cited as 'Stull/Carty/Quinlan 2012' in subsequent durability literature.",
+        "tags": [
+          "contemporary",
+          "analytical",
+          "Stull Chart",
+          "Alfred University",
+          "durability"
+        ]
+      },
       {
         "id": "stull_1912_silica_alumina",
         "title": "Influences of Variable Silica and Alumina on Porcelain Glazes of Constant RO",
@@ -1694,8 +1799,8 @@
         "id": "mastering_cone6_hansen",
         "title": "Mastering Cone 6 Glazes",
         "author_ids": [
-          "hansen_tony",
-          "hesselberth_john"
+          "hesselberth_john",
+          "roy_ron"
         ],
         "subject": [
           "cone 6",
