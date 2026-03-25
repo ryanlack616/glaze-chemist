@@ -376,13 +376,15 @@
         "known_for": [
           "analytical chemistry in studio ceramics",
           "XRF and SEM methods",
-          "bridging industrial and studio ceramic science"
+          "bridging industrial and studio ceramic science",
+          "glaze durability research (R\u00b2O:RO flux ratio, dishwasher test)"
         ],
-        "notes": "Central to bringing analytical chemistry methods into studio ceramics education.",
+        "notes": "Central to bringing analytical chemistry methods into studio ceramics education. Durability research (\"Glossed Over\", NCECA 2026) confirmed that 0.3 R\u00b2O:0.7 RO with adequate Al\u2082O\u2083 (0.3 UMF) produces the most durable glazes across all temperatures — validating the optimal Stull chart zone empirically.",
         "tags": [
           "contemporary",
           "analytical",
-          "Alfred University"
+          "Alfred University",
+          "durability"
         ],
         "collaborators": [
           "Val Cushing",
@@ -1488,7 +1490,8 @@
           "slug_prefix": "ia-clay-and-glazes-for-the-potter",
           "pages": 237,
           "label": "Full text indexed (237 pages OCR'd from public domain edition)"
-        }
+        },
+        "cover_url": "https://covers.openlibrary.org/b/id/9954879-M.jpg"
       },
       {
         "id": "potters_book_leach",
@@ -1510,7 +1513,8 @@
           "devotional",
           "ash glazes"
         ],
-        "isbn": "9780571109920"
+        "isbn": "9780571109920",
+        "cover_url": "https://covers.openlibrary.org/b/id/15155833-M.jpg"
       },
       {
         "id": "potters_dictionary_hamer",
@@ -1619,7 +1623,8 @@
           "cult"
         ],
         "isbn": "9780646128658",
-        "knowledge_search": "stoneware glaze testing systematic"
+        "knowledge_search": "stoneware glaze testing systematic",
+        "cover_url": "https://archive.org/services/img/stonewareglazess0000curr"
       },
       {
         "id": "mastering_cone6_hansen",
@@ -1642,7 +1647,8 @@
           "beloved"
         ],
         "isbn": "9780966636826",
-        "knowledge_search": "cone 6 limit formula"
+        "knowledge_search": "cone 6 limit formula",
+        "cover_url": "https://covers.openlibrary.org/b/id/13218528-M.jpg"
       },
       {
         "id": "science_for_potters_bloomfield",
@@ -1661,7 +1667,8 @@
           "introductory",
           "science"
         ],
-        "isbn": "9781574983609"
+        "isbn": "9781574983609",
+        "cover_url": "https://covers.openlibrary.org/b/id/10193291-M.jpg"
       },
       {
         "id": "colour_in_glazes_bloomfield",
@@ -1710,7 +1717,8 @@
         "knowledge_indexed": {
           "source": "ia-ceramic-glazes",
           "pages": 81
-        }
+        },
+        "cover_url": "https://covers.openlibrary.org/b/id/8518486-M.jpg"
       },
       {
         "id": "ash_glazes_tichane",
@@ -1753,7 +1761,8 @@
           "out of print",
           "historical reconstruction"
         ],
-        "isbn": "9780961492816"
+        "isbn": "9780961492816",
+        "cover_url": "https://covers.openlibrary.org/b/id/663804-M.jpg"
       },
       {
         "id": "reds_reds_reds_tichane",
@@ -1775,7 +1784,8 @@
           "out of print",
           "historical reconstruction"
         ],
-        "isbn": "9780961492823"
+        "isbn": "9780961492823",
+        "cover_url": "https://covers.openlibrary.org/b/id/9278181-M.jpg"
       },
       {
         "id": "ohata_kaki_tichane",
@@ -1816,7 +1826,8 @@
           "beloved"
         ],
         "isbn": "9780812235289",
-        "knowledge_search": "Chinese glaze celadon"
+        "knowledge_search": "Chinese glaze celadon",
+        "cover_url": "https://covers.openlibrary.org/b/id/602859-M.jpg"
       },
       {
         "id": "electric_kiln_ceramics_zakin",
@@ -1876,7 +1887,8 @@
           "foundational"
         ],
         "isbn": "9780801966323",
-        "knowledge_search": "silica alumina eutectic"
+        "knowledge_search": "silica alumina eutectic",
+        "cover_url": "https://covers.openlibrary.org/b/id/4494212-M.jpg"
       },
       {
         "id": "pioneer_pottery_cardew",
@@ -1911,7 +1923,8 @@
           "Japanese",
           "historical"
         ],
-        "isbn": "9780870112799"
+        "isbn": "9780870112799",
+        "cover_url": "https://archive.org/services/img/worldofjapanesec0000sand"
       },
       {
         "id": "glazes_special_effects_sanders",
@@ -1928,7 +1941,8 @@
           "specialty",
           "studio"
         ],
-        "isbn": "9780823019281"
+        "isbn": "9780823019281",
+        "cover_url": "https://covers.openlibrary.org/b/id/4467157-M.jpg"
       },
       {
         "id": "potters_book_glaze_recipes_cooper",
@@ -1986,7 +2000,8 @@
           "reduction"
         ],
         "isbn": "9780801985577",
-        "knowledge_search": "wood fire ash deposit"
+        "knowledge_search": "wood fire ash deposit",
+        "cover_url": "https://covers.openlibrary.org/b/id/1510268-M.jpg"
       },
       {
         "id": "complete_potters_companion_birks",
@@ -2005,7 +2020,8 @@
           "introductory",
           "popular"
         ],
-        "isbn": "9780821220757"
+        "isbn": "9780821220757",
+        "cover_url": "https://covers.openlibrary.org/b/id/2041785-M.jpg"
       },
       {
         "id": "potters_studio_handbook_zamek",
@@ -2024,7 +2040,8 @@
           "contemporary",
           "practical"
         ],
-        "isbn": "9780760338674"
+        "isbn": "9780760338674",
+        "cover_url": "https://covers.openlibrary.org/b/id/13054751-M.jpg"
       },
       {
         "id": "cushings_handbook",
@@ -2045,7 +2062,8 @@
           "beloved",
           "Alfred University",
           "recipes"
-        ]
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/12707846-M.jpg"
       },
       {
         "id": "elements_ceramics_norton",
@@ -2064,7 +2082,8 @@
           "industrial"
         ],
         "isbn": "9780201057799",
-        "knowledge_search": "ceramic engineering elements"
+        "knowledge_search": "ceramic engineering elements",
+        "cover_url": "https://covers.openlibrary.org/b/id/4495331-M.jpg"
       },
       {
         "id": "fine_ceramics_norton",
@@ -2097,7 +2116,8 @@
           "foundational",
           "education"
         ],
-        "isbn": "9780442007287"
+        "isbn": "9780442007287",
+        "cover_url": "https://covers.openlibrary.org/b/id/15041826-M.jpg"
       },
       {
         "id": "grand_feu_ceramics_doat",
@@ -2112,7 +2132,8 @@
           "foundational",
           "crystalline",
           "French"
-        ]
+        ],
+        "cover_url": "https://covers.openlibrary.org/b/id/5872014-M.jpg"
       },
       {
         "id": "intro_ceramics_kingery",
@@ -2158,7 +2179,8 @@
           "reference",
           "recipes"
         ],
-        "isbn": "9780823009572"
+        "isbn": "9780823009572",
+        "cover_url": "https://covers.openlibrary.org/b/id/624428-M.jpg"
       },
       {
         "id": "lustre_daly",
@@ -2173,7 +2195,8 @@
           "luster",
           "specialty"
         ],
-        "isbn": "9781574983081"
+        "isbn": "9781574983081",
+        "cover_url": "https://covers.openlibrary.org/b/id/8003766-M.jpg"
       },
       {
         "id": "glazes_glazing_techniques_daly",
@@ -2188,7 +2211,8 @@
           "studio",
           "color"
         ],
-        "isbn": "9780713645590"
+        "isbn": "9780713645590",
+        "cover_url": "https://covers.openlibrary.org/b/id/1348725-M.jpg"
       },
       {
         "id": "crystalline_glazes_kline",
@@ -2204,7 +2228,8 @@
           "specialty"
         ],
         "isbn": "9781574983487",
-        "knowledge_search": "crystalline zinc glaze"
+        "knowledge_search": "crystalline zinc glaze",
+        "cover_url": "https://archive.org/services/img/crystallineglaze0000creb"
       },
       {
         "id": "ash_glazes_rogers",
@@ -2237,7 +2262,8 @@
           "reduction"
         ],
         "isbn": "9781454708124",
-        "knowledge_search": "raku reduction copper"
+        "knowledge_search": "raku reduction copper",
+        "cover_url": "https://covers.openlibrary.org/b/id/12637449-M.jpg"
       },
       {
         "id": "soda_clay_fire_nichols",
@@ -2268,7 +2294,8 @@
           "material science",
           "education"
         ],
-        "isbn": "9780874220827"
+        "isbn": "9780874220827",
+        "cover_url": "https://covers.openlibrary.org/b/id/827809-M.jpg"
       },
       {
         "id": "self_reliant_potter_norsker",
@@ -2284,7 +2311,8 @@
           "geology"
         ],
         "isbn": "9783528020590",
-        "knowledge_search": "local materials glaze geology"
+        "knowledge_search": "local materials glaze geology",
+        "cover_url": "https://covers.openlibrary.org/b/id/5208646-M.jpg"
       },
       {
         "id": "potters_workbook_illian",
@@ -2301,6 +2329,34 @@
           "materials"
         ],
         "isbn": "9780877459477"
+      },
+      {
+        "id": "glossed_over_katz",
+        "title": "Glossed Over: Durable Glazes",
+        "author_ids": [
+          "katz_matt"
+        ],
+        "year": 2026,
+        "type": "lecture paper",
+        "venue": "NCECA, Detroit",
+        "source_url": "https://wiki.glazy.org/uploads/short-url/p2WebBEmKFvfRp4jFhIziHfQSTA.pdf",
+        "subject": [
+          "glaze durability",
+          "flux ratio",
+          "alumina",
+          "boron",
+          "dishwasher testing"
+        ],
+        "community_status": "significant",
+        "notes": "Empirical durability study using 64-cycle dishwasher testing. Key findings: 0.3 R\u00b2O:0.7 RO is the optimal flux ratio for durability at all temperatures. Boron (0.3\u20130.5 UMF) improves durability vs. no-boron at cone 04. Low alumina (0.2 UMF) produces 58.9% worse durability than 0.3 Al\u2082O\u2083. Best performer: 0.3 R\u00b2O:0.7 RO + boron at \u22122.82% degradation (actually glossier after 64 cycles). Worst: 0.5 R\u00b2O:0.5 RO regardless of boron. Test matrix: SiO\u2082 fixed at 2.1, Al\u2082O\u2083 at 0.3 (7:1 ratio), boron varied 0.1\u20130.55. Confirms Stull/Carty/Quinlan 2012 optimal zone.",
+        "tags": [
+          "contemporary",
+          "durability",
+          "cone 04",
+          "flux ratio",
+          "empirical",
+          "NCECA"
+        ]
       },
       {
         "id": "japanese_wood_fired_kusakabe",
