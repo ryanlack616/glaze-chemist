@@ -44,7 +44,7 @@ enrichments = {
     },
     "cushing_val": {
         # already has Alfred
-        "collaborators": ["Daniel Rhodes", "Matt Katz"],
+        "collaborators": ["Daniel Rhodes"],
     },
     "grotell_maija": {
         "institution": "Cranbrook Academy of Art",
@@ -71,10 +71,6 @@ enrichments = {
     },
     "tichane_robert": {
         "institution": None,  # independent researcher, self-published
-    },
-    "katz_matt": {
-        # already has Alfred
-        "collaborators": ["Val Cushing", "John Britt"],
     },
     "zakin_richard": {
         "institution": "SUNY Oswego",

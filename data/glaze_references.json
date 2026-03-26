@@ -190,8 +190,7 @@
           "cult"
         ],
         "collaborators": [
-          "Daniel Rhodes",
-          "Matt Katz"
+          "Daniel Rhodes"
         ]
       },
       {
@@ -361,34 +360,6 @@
           "ash",
           "reduction",
           "beloved"
-        ]
-      },
-      {
-        "id": "katz_matt",
-        "name": "Matt Katz",
-        "era": "Contemporary",
-        "nationality": "American",
-        "role": [
-          "educator",
-          "researcher"
-        ],
-        "institution": "Alfred University",
-        "known_for": [
-          "analytical chemistry in studio ceramics",
-          "XRF and SEM methods",
-          "bridging industrial and studio ceramic science",
-          "glaze durability research (R\u00b2O:RO flux ratio, dishwasher test)"
-        ],
-        "notes": "Central to bringing analytical chemistry methods into studio ceramics education. Durability research (\"Glossed Over\", NCECA 2026) confirmed that 0.3 R\u00b2O:0.7 RO with adequate Al\u2082O\u2083 (0.3 UMF) produces the most durable glazes across all temperatures — validating the optimal Stull chart zone empirically.",
-        "tags": [
-          "contemporary",
-          "analytical",
-          "Alfred University",
-          "durability"
-        ],
-        "collaborators": [
-          "Val Cushing",
-          "John Britt"
         ]
       },
       {
@@ -1504,7 +1475,7 @@
           "Glaze‐body interface research",
           "Ceramic suspension rheology"
         ],
-        "notes": "Alfred University ceramic engineering professor whose 2012 work with Frederica Quinlan applied modern analytical methods to validate the optimal glaze chemistry zone first identified by Stull in 1912. Their findings — confirming the matte/gloss boundary and durable zone positions on the SiO₂–Al₂O₃ chart — are cited in Katz's 2026 durability study as prior confirmation of the 0.3 R²O:0.7 RO zone.",
+        "notes": "Alfred University ceramic engineering professor whose 2012 work with Frederica Quinlan applied modern analytical methods to validate the optimal glaze chemistry zone first identified by Stull in 1912. Their findings confirmed the matte/gloss boundary and durable zone positions on the SiO₂–Al₂O₃ chart, establishing the analytical basis for the optimal 0.3 R²O:0.7 RO zone.",
         "tags": [
           "contemporary",
           "analytical",
@@ -1512,8 +1483,7 @@
           "Stull Chart"
         ],
         "collaborators": [
-          "Frederica Quinlan",
-          "Matt Katz"
+          "Frederica Quinlan"
         ]
       }
     ],
@@ -1564,7 +1534,7 @@
           "durability"
         ],
         "community_status": "significant",
-        "notes": "Carty and Quinlan applied modern analytical methods to re-examine the SiO₂–Al₂O₃ field first mapped by Stull (1912), confirming and refining the positions of key zone boundaries. Their work established the analytical basis for the 'optimal zone' (roughly 0.3 R²O:0.7 RO, 7:1 SiO₂:Al₂O₃) that Katz's 2026 dishwasher durability study independently confirmed. Cited as 'Stull/Carty/Quinlan 2012' in subsequent durability literature.",
+        "notes": "Carty and Quinlan applied modern analytical methods to re-examine the SiO₂–Al₂O₃ field first mapped by Stull (1912), confirming and refining the positions of key zone boundaries. Their work established the analytical basis for the 'optimal zone' (roughly 0.3 R²O:0.7 RO, 7:1 SiO₂:Al₂O₃). Cited as 'Carty/Quinlan 2012' in subsequent literature.",
         "tags": [
           "contemporary",
           "analytical",
@@ -2500,34 +2470,6 @@
         "isbn": "9780877459477"
       },
       {
-        "id": "glossed_over_katz",
-        "title": "Glossed Over: Durable Glazes",
-        "author_ids": [
-          "katz_matt"
-        ],
-        "year": 2026,
-        "type": "lecture paper",
-        "venue": "NCECA, Detroit",
-        "source_url": "https://wiki.glazy.org/uploads/short-url/p2WebBEmKFvfRp4jFhIziHfQSTA.pdf",
-        "subject": [
-          "glaze durability",
-          "flux ratio",
-          "alumina",
-          "boron",
-          "dishwasher testing"
-        ],
-        "community_status": "significant",
-        "notes": "Empirical durability study using 64-cycle dishwasher testing. Key findings: 0.3 R\u00b2O:0.7 RO is the optimal flux ratio for durability at all temperatures. Boron (0.3\u20130.5 UMF) improves durability vs. no-boron at cone 04. Low alumina (0.2 UMF) produces 58.9% worse durability than 0.3 Al\u2082O\u2083. Best performer: 0.3 R\u00b2O:0.7 RO + boron at \u22122.82% degradation (actually glossier after 64 cycles). Worst: 0.5 R\u00b2O:0.5 RO regardless of boron. Test matrix: SiO\u2082 fixed at 2.1, Al\u2082O\u2083 at 0.3 (7:1 ratio), boron varied 0.1\u20130.55. Confirms Stull/Carty/Quinlan 2012 optimal zone.",
-        "tags": [
-          "contemporary",
-          "durability",
-          "cone 04",
-          "flux ratio",
-          "empirical",
-          "NCECA"
-        ]
-      },
-      {
         "id": "japanese_wood_fired_kusakabe",
         "title": "Japanese Wood-Fired Ceramics",
         "author_ids": [
@@ -2549,10 +2491,9 @@
         "id": "alfred_university",
         "name": "Alfred University",
         "location": "Alfred, New York, USA",
-        "significance": "Major center for ceramic arts and engineering education; home to Cushing and Katz",
+        "significance": "Major center for ceramic arts and engineering education; home to Cushing",
         "associated_people": [
           "cushing_val",
-          "katz_matt",
           "grotell_maija"
         ]
       },

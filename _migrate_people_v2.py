@@ -159,7 +159,6 @@ def infer_primary_contribution(person: dict) -> str:
         "hesselberth_john": "glaze_fit_expansion",
         "roy_ron":          "glaze_fit_expansion",
         "finkelnburg_dave": "glaze_fit_expansion",
-        "katz_matt":        "testing_methodology",
         "currie_ian":       "testing_methodology",
         "norsker_henrik":   "local_materials",
         "wood_nigel":       "historical_revival",
@@ -303,7 +302,7 @@ def make_summary_short(notes: str) -> str:
 
 # ─── Featured set ─────────────────────────────────────────────────────────────
 FEATURED_IDS = {
-    "seger_hermann", "stull_ray", "hansen_tony", "katz_matt",
+    "seger_hermann", "stull_ray", "hansen_tony",
     "leach_bernard", "robineau_adelaide", "orton_edward_jr",
     "hamer_frank", "rhodes_daniel", "currie_ian",
 }

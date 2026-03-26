@@ -463,10 +463,6 @@
         {
           "id": "rhodes-daniel",
           "relation": "shared_domain"
-        },
-        {
-          "id": "katz-matt",
-          "relation": "shared_domain"
         }
       ],
       "domains": {
@@ -911,79 +907,6 @@
       "editorial_status": "draft",
       "completeness": "medium",
       "featured": false
-    },
-    {
-      "schema_version": "2.0.0",
-      "id": "katz-matt",
-      "name": "Matt Katz",
-      "display_name": "Matt Katz",
-      "sort_name": "Katz, Matt",
-      "is_living": true,
-      "birth_year": null,
-      "death_year": null,
-      "nationality": [
-        "American"
-      ],
-      "roles": [
-        "educator",
-        "researcher"
-      ],
-      "periods": [
-        "Contemporary"
-      ],
-      "affiliations": [
-        {
-          "name": "Alfred University",
-          "type": "institution"
-        }
-      ],
-      "primary_contribution_type": "testing_methodology",
-      "secondary_contribution_types": [
-        "glaze_fit_expansion",
-        "ash_glaze",
-        "industrial_research"
-      ],
-      "summary_short": "Central to bringing analytical chemistry methods into studio ceramics education.",
-      "summary_long": "Central to bringing analytical chemistry methods into studio ceramics education. Durability research (\"Glossed Over\", NCECA 2026) confirmed that 0.3 R²O:0.7 RO with adequate Al₂O₃ (0.3 UMF) produces the most durable glazes across all temperatures — validating the optimal Stull chart zone empirically.",
-      "known_for": [
-        "analytical chemistry in studio ceramics",
-        "XRF and SEM methods",
-        "bridging industrial and studio ceramic science",
-        "glaze durability research (R²O:RO flux ratio, dishwasher test)"
-      ],
-      "technical_tags": [
-        "analytical",
-        "durability"
-      ],
-      "context_tags": [
-        "contemporary",
-        "alfred-university"
-      ],
-      "related_people": [
-        {
-          "id": "cushing-val",
-          "relation": "shared_domain"
-        },
-        {
-          "id": "britt-john",
-          "relation": "shared_domain"
-        }
-      ],
-      "domains": {
-        "low_fire": false,
-        "mid_fire": false,
-        "high_fire": true,
-        "industrial": true,
-        "historical": false,
-        "education": true,
-        "software": false,
-        "atmospheric": false
-      },
-      "sources": [],
-      "confidence": "medium",
-      "editorial_status": "draft",
-      "completeness": "medium",
-      "featured": true
     },
     {
       "schema_version": "2.0.0",
@@ -3736,7 +3659,7 @@
         "testing_methodology"
       ],
       "summary_short": "Alfred University ceramic engineering professor whose 2012 work with Frederica Quinlan applied modern analytical methods to validate the optimal gl...",
-      "summary_long": "Alfred University ceramic engineering professor whose 2012 work with Frederica Quinlan applied modern analytical methods to validate the optimal glaze chemistry zone first identified by Stull in 1912. Their findings — confirming the matte/gloss boundary and durable zone positions on the SiO₂–Al₂O₃ chart — are cited in Katz's 2026 durability study as prior confirmation of the 0.3 R²O:0.7 RO zone.",
+      "summary_long": "Alfred University ceramic engineering professor whose 2012 work with Frederica Quinlan applied modern analytical methods to validate the optimal glaze chemistry zone first identified by Stull in 1912. Their findings confirmed the matte/gloss boundary and durable zone positions on the SiO₂–Al₂O₃ chart, establishing the analytical basis for the optimal 0.3 R²O:0.7 RO zone.",
       "known_for": [
         "Validation of optimal Stull chart zone using modern analytical methods (2012, with Quinlan)",
         "Glaze‐body interface research",
@@ -3750,12 +3673,8 @@
         "contemporary",
         "alfred-university"
       ],
-      "related_people": [
-        {
-          "id": "katz-matt",
-          "relation": "shared_domain"
-        }
-      ],
+      "related_people": [],
+
       "domains": {
         "low_fire": false,
         "mid_fire": false,
