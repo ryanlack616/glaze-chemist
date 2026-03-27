@@ -287,13 +287,14 @@ def normalize_v2_person(p):
 
 
 def count_connections(people):
-    """Count unique collaborator edges."""
+    """Count unique relationship edges."""
+    people_ids = {p["id"] for p in people}
     edge_set = set()
     for p in people:
-        for c_name in p.get("collaborators", []):
-            match = next((pp for pp in people if pp["name"] == c_name), None)
-            if match:
-                key = tuple(sorted([p["id"], match["id"]]))
+        for rel in p.get("related_people", []):
+            target_id = rel if isinstance(rel, str) else rel.get("id", "")
+            if target_id in people_ids:
+                key = tuple(sorted([p["id"], target_id]))
                 edge_set.add(key)
     return len(edge_set)
 
